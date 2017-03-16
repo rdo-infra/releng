@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa98f980_5809952b",
+        "filename": "setup.cfg",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-03-16T14:08:28Z",
+      "side": 1,
+      "message": "Nit: I guess we will want to use the new URL here.",
+      "range": {
+        "startLine": 7,
+        "startChar": 12,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "eb7f5c46c84b2d97bbe746cba24ad9d58375757c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
