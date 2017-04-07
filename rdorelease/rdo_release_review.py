@@ -231,7 +231,8 @@ def process_reviews(args):
     inforepo.init(force_fetch=True)
     after = datetime.datetime.now() - datetime.timedelta(days=args.days)
     after_fmt = after.strftime('%Y-%m-%d')
-    reviews = review_utils.get_osp_releases_reviews(args.release, after_fmt,
+    reviews = review_utils.get_osp_releases_reviews(args.release,
+                                                    after=after_fmt,
                                                     status='merged')
     for review in reviews:
         rev_num = review['_number']

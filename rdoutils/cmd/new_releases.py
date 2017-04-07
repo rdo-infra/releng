@@ -15,6 +15,8 @@ def parse_args():
                         help='Project to list open reviews')
     parser.add_argument('-d', '--days', dest='days', default=2, type=int,
                         help='Number of days to list new releases')
+    parser.add_argument('-n', '--review-number', dest='number', default=None,
+                        help='Review number')
     return parser.parse_args()
 
 
@@ -27,7 +29,11 @@ def main():
     args = parse_args()
     after = datetime.datetime.now() - datetime.timedelta(days=args.days)
     after_fmt = after.strftime('%Y-%m-%d')
-    reviews = review_utils.get_osp_releases_reviews(args.release, after_fmt,
+    if args.number:
+        after_fmt = None
+    reviews = review_utils.get_osp_releases_reviews(args.release,
+                                                    after=after_fmt,
+                                                    number=args.number,
                                                     status='merged')
     inforepo = rdoinfo.get_default_inforepo()
     inforepo.init(force_fetch=True)
