@@ -157,15 +157,6 @@ def is_newer(new_evr, old_evr):
     return comp == 1
 
 
-def tarball_exists(package):
-    os.chdir("%s/%s" % (repodir, package))
-    try:
-        spectool('-g', "%s.spec" % package)
-        return True
-    except:
-        return False
-
-
 def process_package(package, dry_run):
     log_message('INFO', "Processing package %s version %s for release %s" %
                 (package.name, package.version, package.osp_release), logfile)
@@ -187,11 +178,6 @@ def process_package(package, dry_run):
             log_message('INFO', "Version %s is not newer that existing %s" %
                         (new_evr, old_evr), logfile)
             db.update_status(session, package, 'NOTREQUIRED')
-            return
-        if not tarball_exists(package.name):
-            log_message('INFO', "Tarball for %s %s is not ready yet" %
-                        (package.name, package.version), logfile)
-            db.update_status(session, package, 'RETRY')
             return
         log_message('INFO', "Sending review for package %s version %s" %
                     (package.name, package.version), logfile)
