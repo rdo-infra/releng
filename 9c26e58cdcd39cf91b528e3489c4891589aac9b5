@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa98f980_4f2617bc",
+        "filename": "rdorelease/rdo_release_review.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-04-07T15:17:19Z",
+      "side": 1,
+      "message": "From the tox output, this needs to be removed.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 23
+      },
+      "revId": "9c26e58cdcd39cf91b528e3489c4891589aac9b5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
