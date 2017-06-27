@@ -10,7 +10,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 GERRIT_URLS = {
-    'rdo': 'https://review.rdoproject.org/api',
+    'rdo': 'https://review.rdoproject.org/r',
     'osp': 'https://review.openstack.org/',
 }
 
