@@ -9,27 +9,33 @@ if not os.path.exists(local_info):
     os.makedirs(local_info)
 
 
-def get_projects(tag=None):
+def get_projects(tag=None, buildsys_tag=None):
     inforepo = rdoinfo.RdoinfoRepo(
         local_repo_path=local_info)
     inforepo.init(force_fetch=True)
-    if tag is None:
+    if tag is None and buildsys_tag is None:
         return inforepo.get_info()['packages']
     pkgs_release = []
     for package in inforepo.get_info()['packages']:
-        if tag in package['tags'].keys():
+        if tag is not None and tag in package['tags'].keys():
+            pkgs_release.append(package)
+        if (buildsys_tag is not None and 'buildsys-tags' in package.keys() and
+                buildsys_tag in package['buildsys-tags'].keys()):
             pkgs_release.append(package)
     return pkgs_release
 
 
-def get_projects_distgit(tag=None):
+def get_projects_distgit(tag=None, buildsys_tag=None):
     re_distgit = re.compile('.*?((puppet|openstack)/.*).git')
-    projects = get_projects(tag=tag)
+    projects = get_projects(tag=tag, buildsys_tag=buildsys_tag)
     distgits = []
     for project in projects:
         distgit_url = project['review-origin']
-        distgit_short = re.search(re_distgit, distgit_url).group(1)
-        distgits.append(distgit_short)
+        try:
+            distgit_short = re.search(re_distgit, distgit_url).group(1)
+            distgits.append(distgit_short)
+        except:
+            pass
     return distgits
 
 
