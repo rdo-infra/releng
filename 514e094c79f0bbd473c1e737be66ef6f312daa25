@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_b1f7ff8b",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-10-04T10:51:13Z",
+      "side": 1,
+      "message": "mmm, not sure how to improve readibility. We need to check that buildsys_tag is defined to some string and that is in the list of keys in [\u0027buildsys-tags\u0027]",
+      "parentUuid": "fa81d914_99cdc789",
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_59b42ff2",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 3
@@ -47,6 +65,24 @@
       "writtenOn": "2017-09-30T17:13:02Z",
       "side": 1,
       "message": "Why using try? re.search returns None if search fail\nmatch \u003d re.search(re_distgit, distgit_url)\nif match:\n  distgit.append(match.group(1))",
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_9103db72",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-10-04T10:51:13Z",
+      "side": 1,
+      "message": "There may be cases as dependencies where we don\u0027t manage distgit using review.r.o where project[\u0027review-origin\u0027] doesn\u0027t exist and in that case it returns exception. I can check if it exist instead of using try/except, would it be better?",
+      "parentUuid": "fa81d914_59b42ff2",
       "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
