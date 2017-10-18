@@ -2,6 +2,46 @@
   "comments": [
     {
       "key": {
+        "uuid": "fa81d914_877c6e74",
+        "filename": "rdoutils/cmd/rdo_projects.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-18T06:20:12Z",
+      "side": 1,
+      "message": "would be better if we indent help message 2nd line with \u003d",
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_275f4210",
+        "filename": "rdoutils/cmd/rdo_projects.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-18T06:20:12Z",
+      "side": 1,
+      "message": "cbs_tag would be better",
+      "range": {
+        "startLine": 41,
+        "startChar": 12,
+        "endLine": 41,
+        "endChar": 17
+      },
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_79b9f3e8",
         "filename": "rdoutils/cmd/rdo_projects.py",
         "patchSetId": 3
@@ -13,6 +53,52 @@
       "writtenOn": "2017-09-30T17:13:02Z",
       "side": 1,
       "message": "+1",
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_479b56c9",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-18T06:20:12Z",
+      "side": 1,
+      "message": "Do we need to check this again, as it already been checked on L16 and returned. If we still want to check, this should be moved out of the loop as it would be common for all packages in the iterator.",
+      "range": {
+        "startLine": 20,
+        "startChar": 11,
+        "endLine": 20,
+        "endChar": 26
+      },
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_87a54e06",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-18T06:20:12Z",
+      "side": 1,
+      "message": "This condition should be out of loop, so a different for loop to handle this would be better. If going this way it would be better to keep output of inforepo.get_info()[\u0027packages\u0027] in a variable and reuse it in function get_projects.",
+      "range": {
+        "startLine": 22,
+        "startChar": 12,
+        "endLine": 22,
+        "endChar": 37
+      },
       "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
@@ -54,6 +140,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_67313aa2",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-18T06:20:12Z",
+      "side": 1,
+      "message": "May be my comments would help in improving the readability.",
+      "parentUuid": "fa81d914_b1f7ff8b",
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_59b42ff2",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 3
@@ -83,6 +187,24 @@
       "side": 1,
       "message": "There may be cases as dependencies where we don\u0027t manage distgit using review.r.o where project[\u0027review-origin\u0027] doesn\u0027t exist and in that case it returns exception. I can check if it exist instead of using try/except, would it be better?",
       "parentUuid": "fa81d914_59b42ff2",
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_c7ae66e7",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-18T06:20:12Z",
+      "side": 1,
+      "message": "I think check would be better as we just want to check the existence of a key and it would be clear to understand as well.",
+      "parentUuid": "fa81d914_9103db72",
       "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
