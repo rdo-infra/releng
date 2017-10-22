@@ -148,6 +148,30 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_ed918b53",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-22T16:11:18Z",
+      "side": 1,
+      "message": "Ok, Got it, But still \"tag is not None\" condition shouldn\u0027t be outside of for loop as same comment for buildsys_tag.",
+      "parentUuid": "fa81d914_e7736ae5",
+      "range": {
+        "startLine": 20,
+        "startChar": 11,
+        "endLine": 20,
+        "endChar": 26
+      },
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_87a54e06",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 3
@@ -183,6 +207,30 @@
       "side": 1,
       "message": "IIUC, you are proposing to use two for loops instead of a single one with two conditions. IMHO, this way is easier to understand and we avoid iterating the full list of packages twice. I guess some comments would help.",
       "parentUuid": "fa81d914_87a54e06",
+      "range": {
+        "startLine": 22,
+        "startChar": 12,
+        "endLine": 22,
+        "endChar": 37
+      },
+      "revId": "514e094c79f0bbd473c1e737be66ef6f312daa25",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_0d9fbf60",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-10-22T16:11:18Z",
+      "side": 1,
+      "message": "Actually i wanted to move the conditions: \"tag is not None\" and \"buildsys_tag is not None\" outside of for loops as these are not package dependent(common for all packages). And currently i can\u0027t think of a way apart from using two for loops.\nAlso, number of statements executed would be far less or equal in the case with 2 for loops as we are moving the condition  outside of for loop.",
+      "parentUuid": "fa81d914_07815e8f",
       "range": {
         "startLine": 22,
         "startChar": 12,
