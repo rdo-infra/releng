@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_526ecaca",
+        "filename": "rdorelease/rdo_release_review.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-08T14:58:14Z",
+      "side": 1,
+      "message": "spectool binary is installed by rpmdevtools, make sure it\u0027s installed in the rdo-send-stable-release jobs.",
+      "range": {
+        "startLine": 16,
+        "startChar": 15,
+        "endLine": 16,
+        "endChar": 23
+      },
+      "revId": "1dde8a20b2f821321fdd33b2e7f52dddd81734cc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
