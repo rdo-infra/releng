@@ -22,6 +22,30 @@
       "revId": "1dde8a20b2f821321fdd33b2e7f52dddd81734cc",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_924a0226",
+        "filename": "rdorelease/rdo_release_review.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2017-11-09T05:08:33Z",
+      "side": 1,
+      "message": "iiuc it\u0027s installed in rdo-centos-7 node(used by rdo-send-stable-release job) by rdo-base element:\nhttps://github.com/rdo-infra/review.rdoproject.org-config/blob/master/nodepool/nodepool.yaml#L2-L9\nhttps://github.com/rdo-infra/review.rdoproject.org-config/blob/master/nodepool/elements/rdo-base/package-installs.yaml#L20",
+      "parentUuid": "da86d52c_526ecaca",
+      "range": {
+        "startLine": 16,
+        "startChar": 15,
+        "endLine": 16,
+        "endChar": 23
+      },
+      "revId": "1dde8a20b2f821321fdd33b2e7f52dddd81734cc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
