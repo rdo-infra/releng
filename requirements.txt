@@ -3,12 +3,13 @@ sh >= 1.12.9
 pbr
 python_jenkins
 rdopkg
-requests
+requests==2.9.1
 urllib3
 validators
 PyYAML
 git-review
-
+oslo.log>=3.37.0
+cliff>=2.11.0
 # Other binary requirements
 # git
 # python-rpm
