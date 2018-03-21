@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ab14d0d_294a4484",
+        "filename": "rdoutils/cmd/reviews_rdo_project.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-03-21T04:02:39Z",
+      "side": 1,
+      "message": "Is this really required, if not i think it would be cleaner without it.",
+      "range": {
+        "startLine": 29,
+        "startChar": 71,
+        "endLine": 29,
+        "endChar": 73
+      },
+      "revId": "db54bcd243ebc60e481e848e5eb58dc3c226e7b5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
