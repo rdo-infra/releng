@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ab14d0d_59a674c2",
+        "filename": "rdorelease/rdo_release_review.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-04-03T11:58:24Z",
+      "side": 1,
+      "message": "May be we can do conditionally import to be compatible with older rdopkg. but that can be optional as we have limited use of rdo_release_review.\nAlso we should update requirement.txt to reflect minimum requirement when we do changes which are dependent on new releases.",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 32
+      },
+      "revId": "d4a5d02f22a7042975a762f1d866496093fb3e5d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
