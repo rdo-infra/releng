@@ -22,6 +22,30 @@
       "revId": "d4a5d02f22a7042975a762f1d866496093fb3e5d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab14d0d_79881023",
+        "filename": "rdorelease/rdo_release_review.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-04-03T12:09:44Z",
+      "side": 1,
+      "message": "Good point. I\u0027m fixing requirements.txt so that it forces the minimal rdopkg version. I think we don\u0027t need to keep it backwards compatible with previous versions.",
+      "parentUuid": "1ab14d0d_59a674c2",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 32
+      },
+      "revId": "d4a5d02f22a7042975a762f1d866496093fb3e5d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
