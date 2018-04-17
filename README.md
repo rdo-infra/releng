@@ -42,6 +42,18 @@ the virtualenv to use rpm module from the system.
 
 -  Don't pass --dry-run if you want the script to send reviews to https://review.rdoproject.org
 
+**analyze_deps**
+This command lists the packages that require a sepecific package from the RDO dependencies repository (not OpenStack
+package). When a specific dependency is not passed as parameter, the full list of runtime dependencies will be
+displayed. Use examples:
+
+analyze_deps --help
+analyze_deps -r master
+analyze_deps -r queens -p python-sphinx
+
+Note that analyze_deps use dnf api so it must be executed in a Fedora or CentOS with dnf installed.
+
+
 ## TODO
 
 1. Add custom location for rdoinfo in rdoutils/rdoinfo.py
