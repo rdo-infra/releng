@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dac4157f_42d8c31d",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-05-04T09:18:32Z",
+      "side": 1,
+      "message": "Good to add this in requirements.txt",
+      "range": {
+        "startLine": 54,
+        "startChar": 85,
+        "endLine": 54,
+        "endChar": 88
+      },
+      "revId": "f6c81ec9244c339a8f88078ee5597dc44743fc16",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_e8869b64",
+        "filename": "rdoutils/cmd/analyze_deps.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-05-04T09:18:32Z",
+      "side": 1,
+      "message": "\"Release for which to dependency to analyze\" or something else.",
+      "range": {
+        "startLine": 10,
+        "startChar": 30,
+        "endLine": 10,
+        "endChar": 69
+      },
+      "revId": "f6c81ec9244c339a8f88078ee5597dc44743fc16",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_c87bd77a",
+        "filename": "rdoutils/cmd/analyze_deps.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-05-04T09:18:32Z",
+      "side": 1,
+      "message": "Disable build requirements",
+      "range": {
+        "startLine": 18,
+        "startChar": 30,
+        "endLine": 18,
+        "endChar": 47
+      },
+      "revId": "f6c81ec9244c339a8f88078ee5597dc44743fc16",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_c202936f",
+        "filename": "rdoutils/deps_utils.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-05-04T09:18:32Z",
+      "side": 1,
+      "message": "might be good to keep this list seperate txt file. Can be done later though.",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 11
+      },
+      "revId": "f6c81ec9244c339a8f88078ee5597dc44743fc16",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
