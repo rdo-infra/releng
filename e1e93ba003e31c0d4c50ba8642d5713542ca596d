@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abe1de1_9e93c7a3",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-08-14T12:38:06Z",
+      "side": 1,
+      "message": "now need $RELEASE-uc",
+      "range": {
+        "startLine": 8,
+        "startChar": 38,
+        "endLine": 8,
+        "endChar": 46
+      },
+      "revId": "e1e93ba003e31c0d4c50ba8642d5713542ca596d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
