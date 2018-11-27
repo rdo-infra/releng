@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abe1de1_f52cd403",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T16:42:57Z",
+      "side": 1,
+      "message": "os.path.join(local_dir, tag_type, \"%s.yml\" % tag) might be a bit cleaner.",
+      "range": {
+        "startLine": 80,
+        "startChar": 20,
+        "endLine": 80,
+        "endChar": 67
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_95391844",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T16:42:57Z",
+      "side": 1,
+      "message": "We\u0027re only using pkg_project once, maybe we don\u0027t need this extra step.",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 87,
+        "endChar": 42
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_15ef48b1",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T16:42:57Z",
+      "side": 1,
+      "message": "We could just specify tag_value here, it seems clearer to me.",
+      "range": {
+        "startLine": 88,
+        "startChar": 41,
+        "endLine": 88,
+        "endChar": 63
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_553ca02e",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T16:42:57Z",
+      "side": 1,
+      "message": "There is one thing I don\u0027t understand here.\n\nWith this code, if I set update_tags(\u0027tags\u0027, \u0027nova\u0027, \u0027ocata\u0027 ... ) to set a new source-branch just for the ocata branch, wouldn\u0027t we be changing all files? We are iterating over package[\u0027tags\u0027].keys(), and if the tag is not there, updated is False and we are adding it.\n\nAm I missing something?",
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_7541e4a8",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T16:42:57Z",
+      "side": 1,
+      "message": "I would add some sort step here, so the newly added packages do not go automatically to the end of the file.",
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
