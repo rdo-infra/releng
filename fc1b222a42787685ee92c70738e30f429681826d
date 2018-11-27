@@ -220,6 +220,24 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_556a601b",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-11-27T17:09:29Z",
+      "side": 1,
+      "message": "The alternative i can think of is to compare what we want with the actual content in the file. It could be implemented but IMO is more complicated than this implementation.",
+      "parentUuid": "9abe1de1_b5841cd4",
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_7541e4a8",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 1
