@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_d57d50e8",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T17:04:31Z",
+      "side": 1,
+      "message": "Ah, forget it, I misread it.",
+      "parentUuid": "9abe1de1_55238005",
+      "range": {
+        "startLine": 88,
+        "startChar": 41,
+        "endLine": 88,
+        "endChar": 63
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_553ca02e",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 1
@@ -172,6 +196,24 @@
       "side": 1,
       "message": "We are writing all the files where the tags assigned to that package but leaving the same values they had.\n\nThis is done on purpose to cover one case. Let\u0027s assume we have package foo inheriting tags from a package-config (so no actual values exist in any of the tags/\u003crelease\u003e.yml file). Then we want to update source-branch for queens. In that case i need to add it to *all* tags included in the package-config in addition to queens. Otherwise we will end up losing the package from the rest of the tags.",
       "parentUuid": "9abe1de1_553ca02e",
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_b5841cd4",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2018-11-27T17:04:31Z",
+      "side": 1,
+      "message": "Ok. It still looks a bit convoluted to me, but I can\u0027t think of a better way to implement it.",
+      "parentUuid": "9abe1de1_9510f8a9",
       "revId": "fc1b222a42787685ee92c70738e30f429681826d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
