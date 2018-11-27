@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_35224c01",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-11-27T16:53:29Z",
+      "side": 1,
+      "message": "yeah, much better.",
+      "parentUuid": "9abe1de1_f52cd403",
+      "range": {
+        "startLine": 80,
+        "startChar": 20,
+        "endLine": 80,
+        "endChar": 67
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_95391844",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2018-11-27T16:42:57Z",
       "side": 1,
       "message": "We\u0027re only using pkg_project once, maybe we don\u0027t need this extra step.",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 87,
+        "endChar": 42
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_7528c4e2",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-11-27T16:53:29Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "9abe1de1_95391844",
       "range": {
         "startLine": 86,
         "startChar": 0,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_55238005",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-11-27T16:53:29Z",
+      "side": 1,
+      "message": "we are iterating on all tags associated for that package (from line 78), so we need to use package[tag_type][tag] here to fetch the right value for each tag.",
+      "parentUuid": "9abe1de1_15ef48b1",
+      "range": {
+        "startLine": 88,
+        "startChar": 41,
+        "endLine": 88,
+        "endChar": 63
+      },
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_553ca02e",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 1
@@ -88,6 +160,24 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_9510f8a9",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-11-27T16:53:29Z",
+      "side": 1,
+      "message": "We are writing all the files where the tags assigned to that package but leaving the same values they had.\n\nThis is done on purpose to cover one case. Let\u0027s assume we have package foo inheriting tags from a package-config (so no actual values exist in any of the tags/\u003crelease\u003e.yml file). Then we want to update source-branch for queens. In that case i need to add it to *all* tags included in the package-config in addition to queens. Otherwise we will end up losing the package from the rest of the tags.",
+      "parentUuid": "9abe1de1_553ca02e",
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_7541e4a8",
         "filename": "rdoutils/rdoinfo.py",
         "patchSetId": 1
@@ -99,6 +189,24 @@
       "writtenOn": "2018-11-27T16:42:57Z",
       "side": 1,
       "message": "I would add some sort step here, so the newly added packages do not go automatically to the end of the file.",
+      "revId": "fc1b222a42787685ee92c70738e30f429681826d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_151d08bd",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-11-27T16:53:29Z",
+      "side": 1,
+      "message": "will check how to implement",
+      "parentUuid": "9abe1de1_7541e4a8",
       "revId": "fc1b222a42787685ee92c70738e30f429681826d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
