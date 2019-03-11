@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "89312f41_6c0fe747",
+        "filename": "rdorelease/rdo_release_review.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-03-11T08:15:13Z",
+      "side": 1,
+      "message": "need to pass rdoinfo_tag also, currently not working:-\n2019-03-10 22:33:47.513027 | rdo-centos-7 | 2019-03-10 22:32:54 - INFO: Package python-octaviaclient 1.8.0 for stein-uc is not required: Distgit for python-octaviaclient does not contain branch stein-uc-rdo\n\nhttps://logs.rdoproject.org/35/3573c47d46ffb70686fb7b2e835d656f888c4440/post/legacy-rdo-send-stable-release/dbbeac9/job-output.txt.gz",
+      "revId": "c524d803f0d1106b01a47a2b73fddf9645cf65b9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
