@@ -91,6 +91,30 @@
       "revId": "f6c81ec9244c339a8f88078ee5597dc44743fc16",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "89b1567e_a9fdfebc",
+        "filename": "rdoutils/deps_utils.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2019-10-14T10:40:45Z",
+      "side": 1,
+      "message": "You mean a file which is processed during the buidtime only ? or one formated in YAML/JSON and imported in runtime ?\nI would go for the first one, wdyt ?",
+      "parentUuid": "dac4157f_c202936f",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 11
+      },
+      "revId": "f6c81ec9244c339a8f88078ee5597dc44743fc16",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
