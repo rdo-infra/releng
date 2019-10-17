@@ -22,6 +22,30 @@
       "revId": "6803f5195393790fc92198ec132463a51adc256c",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f28b5e9_4a056c4f",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-10-17T11:39:48Z",
+      "side": 1,
+      "message": "That\u0027d change the default behavior of get_projects in a potentially breaking way for some of the consumers. We already tried that in https://review.rdoproject.org/r/#/c/19965/ but broke other stuff so reverted in https://review.rdoproject.org/r/#/c/19996/. We could fix rdo-send-stable-release and try to change defaults again but we need to be careful with that.",
+      "parentUuid": "92794c05_57349fad",
+      "range": {
+        "startLine": 16,
+        "startChar": 29,
+        "endLine": 16,
+        "endChar": 36
+      },
+      "revId": "6803f5195393790fc92198ec132463a51adc256c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
