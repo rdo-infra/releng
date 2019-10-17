@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "92794c05_57349fad",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2019-10-17T09:41:41Z",
+      "side": 1,
+      "message": "If I understand well, the aim of get_projects is to get all projects of rdoinfo (tags, buildsys-tags, deps and rdo). If so, I think we could put rdo-full.yml as default file, wdyt ?",
+      "range": {
+        "startLine": 16,
+        "startChar": 29,
+        "endLine": 16,
+        "endChar": 36
+      },
+      "revId": "6803f5195393790fc92198ec132463a51adc256c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
