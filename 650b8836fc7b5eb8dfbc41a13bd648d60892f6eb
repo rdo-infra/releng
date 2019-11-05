@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef3cff26_ccf917f6",
+        "filename": "scripts/abandon_old_reviews.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2019-11-05T13:43:08Z",
+      "side": 1,
+      "message": "Do we want to keep it?",
+      "range": {
+        "startLine": 92,
+        "startChar": 4,
+        "endLine": 92,
+        "endChar": 86
+      },
+      "revId": "650b8836fc7b5eb8dfbc41a13bd648d60892f6eb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf49d6b9_7297dedc",
+        "filename": "scripts/abandon_old_reviews.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2019-11-05T13:43:08Z",
+      "side": 1,
+      "message": "The PROJECTS variable is not defined anywhere.",
+      "range": {
+        "startLine": 101,
+        "startChar": 7,
+        "endLine": 101,
+        "endChar": 15
+      },
+      "revId": "650b8836fc7b5eb8dfbc41a13bd648d60892f6eb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "08b4cfa6_7d889424",
+        "filename": "scripts/abandon_old_reviews.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2019-11-05T13:43:08Z",
+      "side": 1,
+      "message": "Is this valid, or was it only used during some tests?",
+      "range": {
+        "startLine": 102,
+        "startChar": 44,
+        "endLine": 102,
+        "endChar": 95
+      },
+      "revId": "650b8836fc7b5eb8dfbc41a13bd648d60892f6eb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
