@@ -1,5 +1,5 @@
 distroinfo
-pygerrit >= 1.0.0
+pygerrit2 >= 1.0.0
 sh >= 1.12.9
 pbr
 python_jenkins
@@ -10,6 +10,8 @@ urllib3
 validators
 PyYAML
 git-review
+-e git+https://github.com/softwarefactory-project/graffiti#egg=graffiti
+koji
 
 # Other binary requirements
 # git
