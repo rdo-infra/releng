@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37ec854f_b3240c45",
+        "filename": "requirements.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-11-06T09:24:26Z",
+      "side": 1,
+      "message": "As these are just used in specific scripts i prefer to not get them in requirements.txt to avoid extra packages installation in all jobs. Maybe we could add them as extra deps with some specific option?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 4
+      },
+      "revId": "44edab3417dd25475a26df4e706665ba13cddd01",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
