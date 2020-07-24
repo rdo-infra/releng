@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2953e78f_63c63676",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-07-24T08:57:02Z",
+      "side": 1,
+      "message": "if in u-c file a line starts with python- it means module name contains it, so the provides also have it, i.e.:\n\n# repoquery --provides python3-saharaclient\nLast metadata expiration check: 0:02:03 ago on Fri Jul 24 08:17:39 2020.\npython3-saharaclient \u003d 3.2.0-0.20200630163149.c2eb453.el8\npython3.6dist(python-saharaclient) \u003d 3.2.0\npython3dist(python-saharaclient) \u003d 3\n\nso we don\u0027t need to remove python- ut least when using python3dist(module_name) (i still need to check what pymod2pkg does in this case)",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 63
+      },
+      "revId": "a52e63c10bb503f3dcab0df666cc0f996b5de252",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc73533e_6db6a1e4",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-07-24T08:57:02Z",
+      "side": 1,
+      "message": "I\u0027d remove all the trunk specific logic. It may be interesting to replace it for a --repo-url that would point to a URL pointing to a .repo file and where we may use it several times to specify a set of repos. It would need to work in combination with --repo or --repo-dir. For example, having .repo file ready for operating system repos and passing --repo-url to download delorean-deps.repo and delorean.repo and adding them to --repo-dir.",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 142,
+        "endChar": 0
+      },
+      "revId": "a52e63c10bb503f3dcab0df666cc0f996b5de252",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ad9b376c_78345af7",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-07-24T08:57:02Z",
+      "side": 1,
+      "message": "automatic provides makes module name lowercase, this should be mod_name.lower()",
+      "range": {
+        "startLine": 233,
+        "startChar": 44,
+        "endLine": 233,
+        "endChar": 52
+      },
+      "revId": "a52e63c10bb503f3dcab0df666cc0f996b5de252",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "37898898_b4891a5a",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 284,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-07-24T08:57:02Z",
+      "side": 1,
+      "message": "What i don\u0027t like of this way of working is that it can\u0027t use the virtual provides from the package, only the package name which i think is more likely to have false negatives. Anyway we can keep it to experiment.",
+      "range": {
+        "startLine": 284,
+        "startChar": 4,
+        "endLine": 284,
+        "endChar": 59
+      },
+      "revId": "a52e63c10bb503f3dcab0df666cc0f996b5de252",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca0e98c1_f706f0d8",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-07-24T08:57:02Z",
+      "side": 1,
+      "message": "as said before, i would not add rdo trunk specific options but would replace by a more generic --repo-url",
+      "range": {
+        "startLine": 376,
+        "startChar": 0,
+        "endLine": 379,
+        "endChar": 76
+      },
+      "revId": "a52e63c10bb503f3dcab0df666cc0f996b5de252",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "840180a6_6bcbdfed",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-07-24T08:57:02Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 396,
+        "startChar": 0,
+        "endLine": 405,
+        "endChar": 54
+      },
+      "revId": "a52e63c10bb503f3dcab0df666cc0f996b5de252",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
