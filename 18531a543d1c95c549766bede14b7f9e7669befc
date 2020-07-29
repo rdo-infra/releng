@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e5d9b7f2_8d6376e7",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-07-29T15:13:52Z",
+      "side": 1,
+      "message": "parse this?\nAlso good to suggest the format to use.",
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bea82f3c_4a7c034c",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-07-29T15:13:52Z",
+      "side": 1,
+      "message": "instead of multiple prints, what about creating a dictionary of available info and print with yaml.safe_dump(datadir) ?",
+      "range": {
+        "startLine": 306,
+        "startChar": 1,
+        "endLine": 323,
+        "endChar": 61
+      },
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a78455d7_6edeaa9d",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-07-29T15:13:52Z",
+      "side": 1,
+      "message": "i think better to use release instead of branch, as above branch is being adjusted for stable releases.",
+      "range": {
+        "startLine": 349,
+        "startChar": 33,
+        "endLine": 349,
+        "endChar": 39
+      },
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a60351f_783978db",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-07-29T15:13:52Z",
+      "side": 1,
+      "message": "when filtering particular status, dumped info looks too much duplicated, status,release and tag name. As a future feature we can dump just package name and target version. Anyway not that important as can parse the csv using cut,awk or other parsers.",
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
