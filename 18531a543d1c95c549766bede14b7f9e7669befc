@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "e24f7729_e4cbd4f9",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2020-08-04T09:45:47Z",
+      "side": 1,
+      "message": "Done in https://review.rdoproject.org/r/#/c/28850/1",
+      "parentUuid": "e5d9b7f2_8d6376e7",
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bea82f3c_4a7c034c",
         "filename": "scripts/report-uc.py",
         "patchSetId": 8
@@ -30,6 +48,30 @@
       "writtenOn": "2020-07-29T15:13:52Z",
       "side": 1,
       "message": "instead of multiple prints, what about creating a dictionary of available info and print with yaml.safe_dump(datadir) ?",
+      "range": {
+        "startLine": 306,
+        "startChar": 1,
+        "endLine": 323,
+        "endChar": 61
+      },
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9459aeab_c57c20aa",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2020-08-04T09:45:47Z",
+      "side": 1,
+      "message": "Done in https://review.rdoproject.org/r/#/c/28851/1",
+      "parentUuid": "bea82f3c_4a7c034c",
       "range": {
         "startLine": 306,
         "startChar": 1,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "8c7eb086_0102820c",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2020-08-04T09:45:47Z",
+      "side": 1,
+      "message": "Done in https://review.rdoproject.org/r/#/c/28849/3",
+      "parentUuid": "a78455d7_6edeaa9d",
+      "range": {
+        "startLine": 349,
+        "startChar": 33,
+        "endLine": 349,
+        "endChar": 39
+      },
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8a60351f_783978db",
         "filename": "scripts/report-uc.py",
         "patchSetId": 8
@@ -76,6 +142,24 @@
       "writtenOn": "2020-07-29T15:13:52Z",
       "side": 1,
       "message": "when filtering particular status, dumped info looks too much duplicated, status,release and tag name. As a future feature we can dump just package name and target version. Anyway not that important as can parse the csv using cut,awk or other parsers.",
+      "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b47d745_ef4074f2",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2020-08-04T09:45:47Z",
+      "side": 1,
+      "message": "yeah let\u0027s not bring complexity here and use UNIX/Linux utilities for this kind of operation.\nIt\u0027s better for maintenance point of view I\u0027d say, but we can keep this idea if it\u0027s really needed in the future.",
+      "parentUuid": "8a60351f_783978db",
       "revId": "18531a543d1c95c549766bede14b7f9e7669befc",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
