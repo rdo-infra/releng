@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "722f333b_9cc80af1",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-08-04T08:15:57Z",
+      "side": 1,
+      "message": "here we can use branch as we detecting branch based on release.",
+      "range": {
+        "startLine": 66,
+        "startChar": 8,
+        "endLine": 66,
+        "endChar": 15
+      },
+      "revId": "da6bc64e53547417b6231413db9b0d37e18801eb",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
