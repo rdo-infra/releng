@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "00a7e3ef_42426901",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 345,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-08-04T10:22:19Z",
+      "side": 1,
+      "message": "May be could have used sources \u003d {\"Enabled repositories/tag\": []} and avoid this print too.",
+      "range": {
+        "startLine": 345,
+        "startChar": 4,
+        "endLine": 345,
+        "endChar": 40
+      },
+      "revId": "7bded5d472345f2b429c2b74fa5f1cc71dcc64f6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
