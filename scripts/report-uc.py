@@ -248,12 +248,16 @@ def get_packages_provided_by_repos(mod_name, mod_version, provided_uc,
     download_repos_metadata(repo_url, repo, repos_dir, distro)
     provides = repoquery(provides=pkg_name)
     if len(provides) > 0:
+        latest_version = ''
         for pkg in provides:
-            provided_uc.append(UpperConstraint(mod_name, mod_version,
-                                               pkg.name,
-                                               pkg.version,
-                                               pkg.reponame,
-                                               release))
+            if pkg.version > latest_version:
+                latest_uc = UpperConstraint(mod_name, mod_version,
+                                            pkg.name,
+                                            pkg.version,
+                                            pkg.reponame,
+                                            release)
+                latest_version = pkg.version
+        provided_uc.append(latest_uc)
     else:
         provided_uc.append(UpperConstraint(mod_name, mod_version,
                                            '',
