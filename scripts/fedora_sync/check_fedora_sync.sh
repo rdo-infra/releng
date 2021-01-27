@@ -10,7 +10,14 @@ RDO_RELEASE=$3
 
 FEDORA_TAG=f${FEDORA_RELEASE}
 
-NVR=$(cbs latest-build --quiet cloud8-openstack-${RDO_RELEASE}-release $PKG|grep $PKG|awk '{print $1}')
+CBS_TAGS=$(cbs list-tags|grep ${RDO_RELEASE}-release)
+# By default, it will pick up the more up-to-date tag prefix and will prefer stream as well.
+TAG_PREFIX=$(echo "$CBS_TAGS"|cut -d'-' -f1|sort -V|tail -n 1)
+TAG_PREFIX=${4:-$TAG_PREFIX}
+
+CBS_TAG=$(echo "$CBS_TAGS"|grep -e "^$TAG_PREFIX-")
+
+NVR=$(cbs latest-build --quiet ${CBS_TAG} $PKG|grep $PKG|awk '{print $1}')
 
 NVR_FED=$(koji latest-build --quiet ${FEDORA_TAG} $PKG|grep $PKG|awk '{print $1}')
 

@@ -22,7 +22,11 @@ INITIAL_DIR=$PWD
 mkdir -p $BASEDIR
 
 if [ -z $3 ]; then
-NVR=$(cbs latest-build --quiet cloud8-openstack-${RDO_RELEASE}-release $PKG|grep $PKG|awk '{print $1}')
+CBS_TAGS=$(cbs list-tags|grep ${RDO_RELEASE}-release)
+# It will pick up the more up-to-date tag prefix and will prefer stream as well.
+TAG_PREFIX=$(echo "$CBS_TAGS"|cut -d'-' -f1|sort -V|tail -n 1)
+CBS_TAG=$(echo "$CBS_TAGS"|grep -e "^$TAG_PREFIX-")
+NVR=$(cbs latest-build --quiet ${CBS_TAG} $PKG|grep $PKG|awk '{print $1}')
 else
 NVR=$3
 fi
