@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ee58ea0_2413caaa",
+        "filename": "scripts/fedora_sync/check_fedora_sync.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-01-28T08:30:57Z",
+      "side": 1,
+      "message": "I\u0027m not sure if we can assume that ordering is granted, i\u0027d do something like \"if centos8s- tag exist, pick it, otherwise centos8-\".",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 62
+      },
+      "revId": "896e72b19ac7ae14ddd097cbb80e18603650ce3c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
