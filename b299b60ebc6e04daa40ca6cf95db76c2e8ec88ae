@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dab62bc9_c7f09f29",
+        "filename": "scripts/fedora_sync/check_fedora_sync.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-01-29T10:52:51Z",
+      "side": 0,
+      "message": "is it worth to still handle this script for cloud8 tags since it\u0027s going to go away and next rdo release wallaby will be centos-stream only and we are already transitioning other rdo releases? saying so as we run this script manually and only during release, or plan is to go like this and cleanup later.",
+      "range": {
+        "startLine": 13,
+        "startChar": 31,
+        "endLine": 13,
+        "endChar": 37
+      },
+      "revId": "b299b60ebc6e04daa40ca6cf95db76c2e8ec88ae",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
