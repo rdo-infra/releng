@@ -1,9 +1,12 @@
 import argparse
 import datetime
+import fileinput
+import gnupg
 import os
 import re
 import rpm
 import shutil
+import sys
 import time
 
 from distroinfo import info
@@ -13,8 +16,7 @@ from rdoutils import review_utils
 from rdoutils import releases_utils
 from rdoutils import rdoinfo as rdoinfo_utils
 from rdoutils.rdoinfo import NotInRdoinfoRelease
-from sh import rdopkg
-from sh import spectool
+from sh import rdopkg, spectool
 
 from .utils import log_message
 
@@ -149,6 +151,50 @@ def clone_distgit(package, release):
                                  (package, stable_branch))
 
 
+def is_string_in_file(file_name, string_to_search):
+    """ Check if any line in the file contains given string """
+    with open(file_name, 'r') as f:
+        for line in f:
+            if string_to_search in line:
+                return True
+    return False
+
+
+def replace(file, current_line, new_line):
+    """ Replace given line in the file by new line """
+    with fileinput.input(file, inplace=True) as f:
+        for line in f:
+            if current_line in line:
+                line = new_line
+            sys.stdout.write(line)
+
+
+def update_pubkey_fingerprint(package):
+    """ Update pubkey fingerprint in .spec file
+    This function aims to verify the pubkey fingerprint and update it if
+    possible.
+    """
+    gpg = gnupg.GPG()
+    projectdir = repodir + '/' + package + '/'
+    spec_file = projectdir + "%s.spec" % package
+    tarball_url = spectool('-l', '-s', '0', spec_file)
+    tarball = os.path.basename(str(tarball_url)).strip('\n')
+    try:
+        with open(projectdir + tarball + '.asc', "rb") as sig_file:
+            verify = gpg.verify_file(sig_file, projectdir + tarball)
+
+        if verify.status == 'signature valid':
+            current_fingerprint = "%global sources_gpg_sign 0x"
+            up_to_date_fingerprint = "%%global sources_gpg_sign 0x%s\n" % \
+                                        verify.pubkey_fingerprint.lower()
+            if not is_string_in_file(spec_file, up_to_date_fingerprint):
+                replace(spec_file, current_fingerprint, up_to_date_fingerprint)
+                return True
+        return False
+    except FileNotFoundError:
+        return False
+
+
 def new_version(package, version, release, dry_run=True,
                 chglog_user=None, chglog_email=None):
     os.chdir("%s/%s" % (repodir, package))
@@ -161,6 +207,8 @@ def new_version(package, version, release, dry_run=True,
     if chglog_email:
         cmd = cmd + ['-e', chglog_email]
     new_vers = rdopkg(*cmd)
+    if update_pubkey_fingerprint(package):
+        git('commit', '-a', '--amend', '--no-edit')
     if not dry_run:
         git('review', '-t', '%s-update' % release)
     return new_vers
