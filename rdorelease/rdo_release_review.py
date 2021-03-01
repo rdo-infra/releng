@@ -22,7 +22,7 @@ from .utils import log_message
 rdoinfo_repo = ('https://raw.githubusercontent.com/'
                 'redhat-openstack/rdoinfo/master/')
 # From https://releases.openstack.org/#cryptographic-signatures
-current_pubkey_fingerprint = "5d2d1e4fb8d38e6af76c50d53d4fec30cf5ce3da"
+current_pubkey_fingerprint = "4c8b8b5a694f612544b3b4bac52f01a3fbdb9949"
 
 
 def parse_args():
@@ -101,6 +101,7 @@ def new_pkgs_review(review, inforepo):
                 logfile)
     new_pkgs = []
     new_releases = releases_utils.get_new_releases_review(review)
+    new_releases = [{'name': 'tripleoclient', 'version': '15.0.0', 'repos': ['openstack/tripleoclient'], 'release': 'victoria'}]
     for release in new_releases:
         for repo in release['repos']:
             log_message('INFO', "%s Found new repo version %s %s" % (
