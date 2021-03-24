@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "388b7c9c_f12525cf",
+        "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2021-03-24T16:52:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e78645cf_3f7396ed",
+      "range": {
+        "startLine": 2,
+        "startChar": 8,
+        "endLine": 2,
+        "endChar": 13
+      },
+      "revId": "955896ed2900ae8129635d3d539bd066579cee98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a764d9f_61abeb0e",
         "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
         "patchSetId": 9
@@ -45,6 +69,30 @@
       "revId": "955896ed2900ae8129635d3d539bd066579cee98",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "830b1116_ea38a583",
+        "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2021-03-24T16:52:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a764d9f_61abeb0e",
+      "range": {
+        "startLine": 13,
+        "startChar": 5,
+        "endLine": 13,
+        "endChar": 76
+      },
+      "revId": "955896ed2900ae8129635d3d539bd066579cee98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
