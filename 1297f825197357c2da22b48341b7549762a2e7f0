@@ -45,6 +45,30 @@
       "revId": "1297f825197357c2da22b48341b7549762a2e7f0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d3b32076_250bd573",
+        "filename": "rdoutils/cmd/check_dependants.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-04-22T09:22:43Z",
+      "side": 1,
+      "message": "I see this specially useful for new releases, but yes, i\u0027ll add also ussuri and train.",
+      "parentUuid": "126915e1_ef17ed53",
+      "range": {
+        "startLine": 229,
+        "startChar": 0,
+        "endLine": 230,
+        "endChar": 42
+      },
+      "revId": "1297f825197357c2da22b48341b7549762a2e7f0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
