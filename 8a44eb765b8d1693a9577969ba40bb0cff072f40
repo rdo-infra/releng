@@ -22,6 +22,30 @@
       "revId": "8a44eb765b8d1693a9577969ba40bb0cff072f40",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "068a60de_30ebe84c",
+        "filename": "rdoutils/cmd/update_uc.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-08-09T14:29:24Z",
+      "side": 1,
+      "message": "No with that rdoinfo will not find project with refactored name, we want to use rdoinfo name(project) when looking into rdoinfo and u-c name(project_uc) when looking into u-c.",
+      "parentUuid": "b4aa32c8_9ebfa3ab",
+      "range": {
+        "startLine": 93,
+        "startChar": 8,
+        "endLine": 93,
+        "endChar": 56
+      },
+      "revId": "8a44eb765b8d1693a9577969ba40bb0cff072f40",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
     }
   ]
 }
