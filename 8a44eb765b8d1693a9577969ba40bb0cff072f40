@@ -94,6 +94,30 @@
       "revId": "8a44eb765b8d1693a9577969ba40bb0cff072f40",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b5353b88_158b09fe",
+        "filename": "rdoutils/cmd/update_uc.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-08-09T14:51:34Z",
+      "side": 1,
+      "message": "First i did similar to ^ but later switched to shorter version.",
+      "parentUuid": "3a9e72a3_a9488c91",
+      "range": {
+        "startLine": 93,
+        "startChar": 8,
+        "endLine": 93,
+        "endChar": 56
+      },
+      "revId": "8a44eb765b8d1693a9577969ba40bb0cff072f40",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
