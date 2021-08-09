@@ -70,6 +70,30 @@
       "revId": "8a44eb765b8d1693a9577969ba40bb0cff072f40",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a9e72a3_a9488c91",
+        "filename": "rdoutils/cmd/update_uc.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2021-08-09T14:43:17Z",
+      "side": 1,
+      "message": "Personally, I would be a bit more explicit (something like \"if project in UC_EXCEPTIONS.keys:...  project \u003d UC_EXCEPTIONS[\u0027project\u0027]), but I\u0027m fine with this alternative.",
+      "parentUuid": "3e3e6a0c_9a431243",
+      "range": {
+        "startLine": 93,
+        "startChar": 8,
+        "endLine": 93,
+        "endChar": 56
+      },
+      "revId": "8a44eb765b8d1693a9577969ba40bb0cff072f40",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
