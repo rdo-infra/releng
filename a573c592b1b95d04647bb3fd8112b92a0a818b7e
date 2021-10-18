@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e410530c_05a8b2e6",
+        "filename": "scripts/list_contributors.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-10-18T04:49:04Z",
+      "side": 1,
+      "message": "also jq|grep name didn\u0027t worked for me jq .|grep name worked though.",
+      "range": {
+        "startLine": 19,
+        "startChar": 151,
+        "endLine": 19,
+        "endChar": 153
+      },
+      "revId": "a573c592b1b95d04647bb3fd8112b92a0a818b7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ebbd723_f11f00d5",
+        "filename": "scripts/list_contributors.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-10-18T04:49:04Z",
+      "side": 1,
+      "message": "let\u0027s use jq itself for filtering, just following should be enough: | jq  -r .[].name | sort -u",
+      "range": {
+        "startLine": 19,
+        "startChar": 151,
+        "endLine": 19,
+        "endChar": 204
+      },
+      "revId": "a573c592b1b95d04647bb3fd8112b92a0a818b7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a33371ea_a866e63e",
+        "filename": "scripts/list_contributors.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2021-10-18T04:49:04Z",
+      "side": 1,
+      "message": "same",
+      "range": {
+        "startLine": 22,
+        "startChar": 121,
+        "endLine": 22,
+        "endChar": 173
+      },
+      "revId": "a573c592b1b95d04647bb3fd8112b92a0a818b7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
