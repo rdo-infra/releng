@@ -1,10 +1,11 @@
+RDO_GERRIT_USER=${RDO_GERRIT_USER:-$USER}
 PKG=$1
 
-version=train
+version=yoga
 
 rm -rf $PKG
 
-rdopkg clone $PKG >/dev/null 2>&1
+rdopkg clone -u $RDO_GERRIT_USER $PKG >/dev/null 2>&1
 pushd $PKG
 git remote update
 git checkout $version-rdo
@@ -14,7 +15,7 @@ then
     if [ $? -ne 0 ]; then
         echo "ERROR checking out $version-rdo in $PKG"
         continue
-    fi 
+    fi
 fi
 git pull
 TAG=`git describe --abbrev=0 upstream/stable/$version 2>/dev/null`
@@ -31,6 +32,7 @@ read -n 2
 rdopkg new-version -U -b $TAG -u RDO -e dev@lists.rdoproject.org -t
 if [ $? -eq 0 ]
 then
+	bash edit_sources_gpg_sign.sh
     git review -t $version-branching
 else
     echo "ERROR runing rdopkg new-version for $PKG"
