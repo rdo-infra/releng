@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83c6855b_94602d88",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "maybe set -e should be added to prevent further exec of code if sth went wrong",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1124b25f_28754f3e",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "variables should be prevented from globbing with double quotes",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f31a6f1b_cdd993a6",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "nit: it would look nicer if notation will be consistent, like in L22",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "19d967de_323c3625",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "continue is valid only in loops",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d11e1a1_88333633",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "indentation",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34e55093_b5f1d087",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "why comment?",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b529da3_c1f6707b",
+        "filename": "scripts/new_release_scripts/send_new_version.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-03-11T11:26:05Z",
+      "side": 1,
+      "message": "using pushd/popd is changing current dir - if script fails, the localization remains changed",
+      "revId": "a13827a404400361cd11a99bb61c9a3da905bd98",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
