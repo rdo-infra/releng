@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e58def14_8d5b4233",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "Add pandas to requirements.txt",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 2
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb403f4c_29ffb8a8",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "As an improvement idea, i\u0027d add the option to run it for a specific version using cli parameter.",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 29
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c084124_ce30f8d9",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "Should be optional and the location should be a parameter. You can use argparse library to parse options. An example:\n\nhttps://github.com/rdo-infra/releng/blob/master/rdoutils/cmd/get_jenkins_job.py#L7-L21",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 2
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94530e4f_e76c2481",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "ok, you convinced me. Working with pandas is great 😊",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 59
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d99d8db_7a6c423a",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "Personally, I\u0027d have tried to not write temporary content into files and work more in memory structures. I think it can be avoided as it always can cause issues reading/writing and leaving leftovers. There are multiple ways. One suggestion may be that get_ftbfs_failures returns an object, a pandas dataframe, a list of dicts, an in-memory csv or whatever is more practical. That would be assigned in a variable in line 98 (we\u0027ll you\u0027ll need to append in the loop) that would be passed to the modify_report() (could be renamed) as a parameter. That modify_report() would create the in-memory report (as you do) and would return it. The logic to write to file (only if specified via cli parameter) or send to stdout could be included in a separate method that is called from the main() and pass the report as parameter and the desired format (file, stdout).\n\nI think this would makes these methods more consumable from other scripts or tools in the future by importing it.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 5
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "384e1dc5_d63c551e",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "the output of the cli should only be the table, not mixing informative messages, etc... and repeated FTBFS.",
+      "range": {
+        "startLine": 67,
+        "startChar": 0,
+        "endLine": 67,
+        "endChar": 3
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "659d45b7_db5b2546",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-18T15:45:42Z",
+      "side": 1,
+      "message": "In case we can use part of the methods here in other python scripts, I\u0027d include the main execution code in a main() method like [1] and the would create a script like report_ftbfs or something like that using console_script feature of pbr [2].\n\n[1] https://github.com/rdo-infra/releng/blob/master/rdoutils/cmd/get_jenkins_job.py#L24-L34\n[2] https://github.com/rdo-infra/releng/blob/master/setup.cfg#L29",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 15
+      },
+      "revId": "14be395af7bad816f1288b835f8363ad507d5387",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
