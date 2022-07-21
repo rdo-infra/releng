@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28ce0ed6_153ea639",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-21T14:03:48Z",
+      "side": 1,
+      "message": "This should be:\n\nfrom rdoutils import review_utils",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 2
+      },
+      "revId": "1e6d879a579aab44c3ad51e092b8b29c2c6c722e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f4ffcd9_ebbd3157",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-21T14:03:48Z",
+      "side": 1,
+      "message": "I\u0027d check if the url for status_report exist and return an error in case it doesn\u0027t. i.e. test generate_ftbfs_dashboard_feed -r centos9-train. You can use try/except with urllib.error.HTTPError error.",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 29
+      },
+      "revId": "1e6d879a579aab44c3ad51e092b8b29c2c6c722e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efc89c99_f3899502",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-21T14:03:48Z",
+      "side": 1,
+      "message": "if report_df is empty (no ftbfs) this fails. Check if it\u0027s empty here or in main() before calling it. In case there are no ftbfs and we want to output into a file, i\u0027d create an empty file as some tool (the dashboard) probably expects that the csv exist even if it\u0027s empty.",
+      "revId": "1e6d879a579aab44c3ad51e092b8b29c2c6c722e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "736c5a50_6925af1d",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-21T14:03:48Z",
+      "side": 1,
+      "message": "I think this info is not useful, tbh.",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 122,
+        "endChar": 5
+      },
+      "revId": "1e6d879a579aab44c3ad51e092b8b29c2c6c722e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3bd988e_20b38c8e",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-21T14:03:48Z",
+      "side": 1,
+      "message": "As we ar calling this from the executable created via console_scripts, don\u0027t need to add this line. Also, if you leave this, it will execute main() twice when you use the executable.",
+      "range": {
+        "startLine": 130,
+        "startChar": 0,
+        "endLine": 130,
+        "endChar": 1
+      },
+      "revId": "1e6d879a579aab44c3ad51e092b8b29c2c6c722e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2d56449_7d117a6f",
+        "filename": "setup.cfg",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-21T14:03:48Z",
+      "side": 1,
+      "message": "Maybe something simpler?. Note that this executable can be used by the dashboard or manually by anyone, i\u0027d use something like rdo_list_ftbfs or something like that. I personally like to start with rdo to type rdo and use command autocompletion when y forget the commands :)",
+      "range": {
+        "startLine": 33,
+        "startChar": 4,
+        "endLine": 33,
+        "endChar": 33
+      },
+      "revId": "1e6d879a579aab44c3ad51e092b8b29c2c6c722e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
