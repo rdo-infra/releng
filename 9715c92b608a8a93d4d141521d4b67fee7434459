@@ -91,6 +91,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0938e5ae_fe6f755d",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-07-28T13:40:51Z",
+      "side": 1,
+      "message": "Actually Joel is right, we should also monitor centos9-wallaby, centos9-xena and centos(7|8)-train. Although those are not supported in cloudsig we should maintain those clean in RDO Trunk.",
+      "parentUuid": "4c1a1ecf_b9465237",
+      "range": {
+        "startLine": 122,
+        "startChar": 8,
+        "endLine": 122,
+        "endChar": 16
+      },
+      "revId": "9715c92b608a8a93d4d141521d4b67fee7434459",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7b6f65e3_1f4d2e72",
         "filename": "setup.cfg",
         "patchSetId": 6
