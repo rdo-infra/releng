@@ -1,0 +1,68 @@
+#!/bin/bash
+source ../common.rc
+RDO_GERRIT_USER=jcapiitao
+CLIENT_AND_LIB_PROJECTS="client_and_lib_projects"
+LATEST_RELEASE=yoga
+MASTER_RELEASE=zed
+
+# change with path config repo exist
+resourcebasepath=review.rdoproject.org-config/resources/
+under_review="projects_under_review"
+
+if [[ -z "$1" ]]; then
+	input_file="$CLIENT_AND_LIB_PROJECTS"
+else
+	input_file="$1"
+fi
+
+pushd $resourcebasepath
+git fetch origin
+git checkout master && git rebase origin/master
+if [[ ! $? -eq 0 ]]; then
+	exit 1
+fi
+popd
+> $under_review
+cat $input_file | while read package; do
+  name=$(rdopkg findpkg $package | grep name: | awk '{print $2}')
+  resource_name=$(echo ${name} |cut -d"/" -f2 | sed -e "s/-distgit$//;
+                                                        s/python-/openstack-/;
+                                                        s/-ui/-dashboard/;
+                                                        s/networking-vmware-nsx/vmware-nsx/;
+                                                        s/rally-plugins/rally-openstack/;
+                                                        s/tests-tempest/tempest-plugin/;
+                                                        s/glance-store/glance_store/;
+                                                        s/manila-dashboard/manila-ui/;
+                                                        s/magnum-dashboard/magnum-ui/;
+                                                        s/ironic-dashboard/ironic-ui/;
+                                                        s/tripleo-dashboard/tripleo-ui/;
+                                                        s/ironic-openstack-agent-builder/ironic-python-agent-builder/;
+                                                        s/ironic-openstack-agent/ironic-python-agent/;
+                                                        s/openstack-horizon-tempest-plugin/openstack-tempest-horizon/;
+                                                        s/openstack-django-horizon/openstack-horizon/;
+                                                        s/openstack-selinux/openstack-openstack-selinux/;
+                                                        s/^ansible-tripleo-ipa$/openstack-tripleo-ipa/;
+                                                        s/ansible-tripleo-ipa-server/openstack-ansible-tripleo-ipa-server/;
+                                                        s/ansible-tripleo-ipsec/openstack-tripleo-ipsec/;
+                                                        s/ansible-tripleo-powerflex/openstack-tripleo-powerflex/;
+                                                        s/kuryr-lib/kuryr/")
+  [[ $resource_name == openstack-* ]] || resource_name=openstack-$name
+  resourcefile=$resourcebasepath$resource_name.yaml
+  echo $package - $resourcefile
+  grep $MASTER_RELEASE-rdo $resourcefile >/dev/null 2>&1
+  if [[ ! $? -eq 0 ]]; then
+	  distgit=$(rdopkg findpkg $package | grep distgit: | awk '{print $2}')
+      githash=$(git ls-remote $distgit refs/heads/rpm-master |sed -e "s/\s*refs.*master$//")
+      line="        $MASTER_RELEASE-rdo: $githash"
+      eof=`tail -c 1 $resourcefile`
+	  ls $resourcefile >/dev/null 2>&1
+      if [ $? -eq 0 ]; then
+		  sed -i "s/.*${LATEST_RELEASE}-rdo.*/&\n${line}/" $resourcefile || sed -i "s/.*master:\ /&\n${line}/" $resourcefile
+      else
+          echo "${line}" >> $resourcefile
+      fi
+  fi
+
+  number_of_open_reviews=$(ssh -p 29418 ${RDO_GERRIT_USER}@review.rdoproject.org gerrit query status:open branch:rpm-master project:openstack/${package}-distgit </dev/null |grep rowCount | cut -d':' -f2)
+  [[ $number_of_open_reviews -eq 0 ]] || (echo $package >> $under_review && echo "!! $package $number_of_open_reviews REVIEW(S) OPEN !!")
+done
