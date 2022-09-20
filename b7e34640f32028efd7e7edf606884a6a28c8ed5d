@@ -52,6 +52,24 @@
       "parentUuid": "ed9a4cea_1a41faef",
       "revId": "b7e34640f32028efd7e7edf606884a6a28c8ed5d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c824e44_0ed91c07",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-09-20T10:17:26Z",
+      "side": 1,
+      "message": "Yeah, sorry, i found that it\u0027s an environment problem because of my copy of rdoinfo, forget it.\n\nLGTM. The only issue i see is that this may be misleading in some cases. Note that when we tag in -testing we remove it from -candidate. So, after tgagging in -testing the packages will be reported to be missing in -candidate which can be confusing and must be used with care.\n\nAnyway, that\u0027s unrelated to this patch and I\u0027m not sure if it\u0027s a problem in the workflow.",
+      "parentUuid": "dc885cd1_d9faee43",
+      "revId": "b7e34640f32028efd7e7edf606884a6a28c8ed5d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
