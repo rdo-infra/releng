@@ -70,6 +70,24 @@
       "parentUuid": "dc885cd1_d9faee43",
       "revId": "b7e34640f32028efd7e7edf606884a6a28c8ed5d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15776721_16ff948a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-09-20T10:34:08Z",
+      "side": 1,
+      "message": "Right, this will be mainly used during new rdo release, to spot the missing builds in -candidate before the promotion to -testing",
+      "parentUuid": "9c824e44_0ed91c07",
+      "revId": "b7e34640f32028efd7e7edf606884a6a28c8ed5d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
