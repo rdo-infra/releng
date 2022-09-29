@@ -16,6 +16,24 @@
       "message": "its better to use cloning via https",
       "revId": "4eb33dfb251953baac35aabe13091226e596b156",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77395d7d_2cf9f6db",
+        "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-09-29T12:25:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "82c28eee_a78e122a",
+      "revId": "4eb33dfb251953baac35aabe13091226e596b156",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
