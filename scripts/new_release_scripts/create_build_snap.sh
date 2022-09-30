@@ -1,28 +1,34 @@
+#!/bin/bash
+
+REALPATH=$(realpath "$0")
+DIRNAME=$(dirname "$REALPATH")
+source $DIRNAME/common.rc
+LANG=en_US.UTF-8
+MASTER_RELEASE_TAG=${MASTER_RELEASE}-uc
+
 PKG=$1
-RELEASE=ussuri
-RELEASE_TAG=ussuri-uc
-PREV_RELEASE=train
 
-LASTRELEASE=$(rdopkg findpkg $PKG| grep cloud8-openstack-${PREV_RELEASE}-testing|awk '{print $2}')
-echo "Last release in ${PREV_RELEASE}: $LASTRELEASE"
+PACKAGE_INFO=$(rdopkg findpkg $PKG)
 
-NEWCOMMIT=$(rdopkg findpkg $PKG|grep -A1 ${RELEASE_TAG}|grep source-branch|awk '{print $2}')
+LAST_NVR=$(echo "$PACKAGE_INFO" | grep cloud9s-openstack-${LATEST_RELEASE}-testing|awk '{print $2}')
+echo "Last release in ${LATEST_RELEASE}: $LAST_NVR"
 
+NEWCOMMIT=$(echo "$PACKAGE_INFO" |grep -A1 ${MASTER_RELEASE_TAG}|grep source-branch|awk '{print $2}')
 echo "New commit is $NEWCOMMIT"
 
 rm -rf $PKG
 rdopkg clone $PKG >/dev/null 2>&1
 pushd $PKG
-git branch -D $RELEASE-rdo>/dev/null 2>&1
-git checkout -b $RELEASE-rdo --track origin/$RELEASE-rdo>/dev/null 2>&1
+git branch -D $MASTER_RELEASE-rdo>/dev/null 2>&1
+git checkout -b $MASTER_RELEASE-rdo --track origin/$MASTER_RELEASE-rdo>/dev/null 2>&1
 if [ $? -ne 0 ]; then
-    echo "ERROR: branch $RELEASE-rdo does not exist"
+    echo "ERROR: branch $MASTER_RELEASE-rdo does not exist"
     exit 1
 fi
 
 git checkout rpm-master >/dev/null 2>&1
-git branch -D $PREV_RELEASE-rdo >/dev/null 2>&1
-git checkout -b $PREV_RELEASE-rdo --track origin/$PREV_RELEASE-rdo >/dev/null 2>&1
+git branch -D $LATEST_RELEASE-rdo >/dev/null 2>&1
+git checkout -b $LATEST_RELEASE-rdo --track origin/$LATEST_RELEASE-rdo >/dev/null 2>&1
 CURRENTCOMMIT=$(grep "^%global commit" *spec|awk '{print $3}')
 
 if [ -z $CURRENTCOMMIT  ];then
@@ -38,10 +44,11 @@ echo "Current release $CURRENTRELEASE"
 
 if [ $NEWCOMMIT == $CURRENTCOMMIT ]; then
     echo "No new commit detected, cross-tag required"
-    echo "cbs tag-build cloud8-openstack-$RELEASE-candidate $LASTRELEASE"
+    echo "cbs add-pkg cloud9s-openstack-$MASTER_RELEASE-candidate $PKG --owner=rdobuilder"
+    echo "cbs tag-build cloud9s-openstack-$MASTER_RELEASE-candidate $LAST_NVR"
     read -n 2
-    cbs add-pkg cloud8-openstack-$RELEASE-candidate $PKG --owner=rdobuilder
-    cbs tag-build cloud8-openstack-$RELEASE-candidate $LASTRELEASE
+    cbs add-pkg cloud9s-openstack-$MASTER_RELEASE-candidate $PKG --owner=rdobuilder
+    cbs tag-build cloud9s-openstack-$MASTER_RELEASE-candidate $LAST_NVR
     exit 0
 fi
 
@@ -64,7 +71,7 @@ fi
 
 echo "New release $NEWRELEASE"
 
-git checkout $RELEASE-rdo >/dev/null 2>&1
+git checkout $MASTER_RELEASE-rdo >/dev/null 2>&1
 
 sed -i "s/^Version.*/Version:        ${NEWVERSION}/" *.spec
 sed -i "s/^Release.*/Release:        ${NEWRELEASE}%{?alphatag}%{?dist}/" *.spec
@@ -75,20 +82,15 @@ CHANGELOG="* $(date +"%a %b %d %Y") RDO <dev@lists.rdoproject.org> ${NEWVERSION}
 sed -i "/^%changelog/a $CHANGELOG" *spec
 
 echo "Last build in RDO Trunk is:"
-
-
-
-repoquery --repofrompath=rdo,http://trunk.rdoproject.org/centos7-${RELEASE}/current --disablerepo=* --enablerepo=rdo $PKG 2>/dev/null|grep $PKG
+repoquery --repofrompath=rdo,http://trunk.rdoproject.org/centos9-${MASTER_RELEASE}/current --disablerepo=* --enablerepo=rdo $PKG 2>/dev/null|grep $PKG
 
 git commit -a -m "Update to post $NEWVERSION ($NEWCOMMIT)"
-
 git show
-
 git branch
 
 read -n 2
 
-git review -t ${RELEASE}-branching
+git review -t ${MASTER_RELEASE}-branching
 git show
 
 popd
