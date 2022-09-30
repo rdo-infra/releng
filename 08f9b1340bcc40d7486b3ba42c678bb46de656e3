@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a6c5e5e_99d9460b",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2022-09-30T10:21:03Z",
+      "side": 1,
+      "message": "nice to use common.rc !",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 4
+      },
+      "revId": "08f9b1340bcc40d7486b3ba42c678bb46de656e3",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
