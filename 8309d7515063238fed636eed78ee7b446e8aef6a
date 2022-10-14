@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0e56b94_62a1b4dc",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-10-14T07:11:51Z",
+      "side": 1,
+      "message": "I\u0027d add set -e option, to secure script workflow",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc632366_5591de68",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-10-14T07:11:51Z",
+      "side": 1,
+      "message": "it would be nice, to give short echo that script is waiting for user action, like \"Press a key, to confirm\"",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e12a7e43_3a527977",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-10-14T07:11:51Z",
+      "side": 1,
+      "message": "maybe it would be good, to handle also a case, when $NEWVERSION will be empty, exit 1 then?",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8cdcd25_29978883",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-10-14T07:11:51Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
