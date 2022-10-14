@@ -18,6 +18,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "10b7934a_1f23e49a",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-10-14T08:20:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0e56b94_62a1b4dc",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fc632366_5591de68",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-10-14T07:11:51Z",
       "side": 1,
       "message": "it would be nice, to give short echo that script is waiting for user action, like \"Press a key, to confirm\"",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91ef8d07_334f825b",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-10-14T08:20:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc632366_5591de68",
       "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
@@ -52,6 +88,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9f6ac7d_f6797fdb",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-10-14T08:20:39Z",
+      "side": 1,
+      "message": "let\u0027s add a condition to ensure it\u0027s not empty",
+      "parentUuid": "e12a7e43_3a527977",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8cdcd25_29978883",
@@ -65,6 +119,24 @@
       "writtenOn": "2022-10-14T07:11:51Z",
       "side": 1,
       "message": "ditto",
+      "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4c07080_ffcd6588",
+        "filename": "scripts/new_release_scripts/create_build_snap.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-10-14T08:20:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8cdcd25_29978883",
       "revId": "8309d7515063238fed636eed78ee7b446e8aef6a",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
