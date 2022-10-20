@@ -11,7 +11,7 @@ PKG=$1
 
 PACKAGE_INFO=$(rdopkg findpkg $PKG)
 
-LAST_NVR=$(echo "$PACKAGE_INFO" | grep cloud9s-openstack-${LATEST_RELEASE}-testing|awk '{print $2}')
+LAST_NVR=$(echo "$PACKAGE_INFO" | grep cloud9s-openstack-${LATEST_RELEASE}-release|awk '{print $2}')
 echo "Last release in ${LATEST_RELEASE}: $LAST_NVR"
 
 NEWCOMMIT=$(echo "$PACKAGE_INFO" |grep -A1 ${MASTER_RELEASE_TAG}|grep source-branch|awk '{print $2}')
