@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf770c17_13e26834",
+        "filename": "rdoutils/review_utils.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-11-30T10:11:02Z",
+      "side": 1,
+      "message": "I think we can remove this condition as the logic is already set in lines 23-26 of reviews_rdo_project.py.\nOr we can move those lines (i.e l.23-26) here.",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 37
+      },
+      "revId": "c71b92faf64cfb573601d80ecb2b24393d63f2b4",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
