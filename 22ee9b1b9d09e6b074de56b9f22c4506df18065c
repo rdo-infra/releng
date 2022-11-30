@@ -33,6 +33,24 @@
       "message": "I think we may avoid some complexity and put fewer code lines by using the default value in the gerrit_server.",
       "revId": "22ee9b1b9d09e6b074de56b9f22c4506df18065c",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89f59d3b_e6f13c03",
+        "filename": "rdoutils/cmd/reviews_rdo_project.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 762
+      },
+      "writtenOn": "2022-11-30T08:42:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9ef3bf74_2bf475a2",
+      "revId": "22ee9b1b9d09e6b074de56b9f22c4506df18065c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
