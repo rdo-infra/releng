@@ -48,6 +48,40 @@ class UpperConstraint(object):
         self.show_overridden_repos = show_overridden_repos
         self.overridden_repos = overridden_repos
         self.status = self.vcmp(self.module_version, self.pkg_version)
+        self.age = self.age(self.module_version, self.pkg_version)
+
+    def age(self, v1, v2):
+        try:
+            max_length = 3
+            _v1 = v1.split('.')
+            _v2 = v2.split('.')
+            _v2 = _v2 + [0]*(max_length - len(_v2))
+            _v1 = _v1 + [0]*(max_length - len(_v1))
+            if v2 and len(_v1) < max_length + 1 and len(_v2) < max_length + 1:
+                _v1 = list(reversed(_v1))
+                _v2 = list(reversed(_v2))
+                result = [0] * max_length
+                c = 0
+                for i in range(max_length):
+                    if _v2[i] == '':
+                        _v2[i] = 0
+                    if c != 0:
+                        _v2[i] = int(_v2[i]) + c
+                        c = 0
+                    if int(_v1[i]) == 0 and int(_v2[i]) == 0:
+                        result[i] = 0
+                    elif int(_v1[i]) == 0 and int(_v2[i]) != 0:
+                        _v1[i] = pow(10, len(str(_v2[i])))
+                        c = 1
+                    else:
+                        pass
+                    result[i] = int(_v1[i]) - int(_v2[i])
+                    result[i] *= pow(1000, i)
+                return sum(result)
+            else:
+                return 0
+        except ValueError:
+            return 0
 
     def vcmp(self, v1, v2=None):
         if not v2:
@@ -411,8 +445,10 @@ def increment_counter(source, counter):
 def main(release, distro, repo_url, repo, repos_dir, tag, koji_profile,
          status, verbose, show_overridden_repos):
     nbr_of_matches_from_source = {}
-    for uc in provides_uc(release, distro, repo_url, repo, repos_dir,
-                          tag, koji_profile, show_overridden_repos):
+    ucs = provides_uc(release, distro, repo_url, repo, repos_dir, tag,
+                      koji_profile, show_overridden_repos)
+    ucs.sort(key=lambda x: x.age, reverse=True)
+    for uc in ucs:
         if status == '' or (status != '' and uc.status == status):
             print(uc)
             if verbose:
