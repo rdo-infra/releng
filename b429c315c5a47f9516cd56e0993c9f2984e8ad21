@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e29e05c1_ac6d347f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-02-01T17:00:24Z",
+      "side": 1,
+      "message": "Current result:\n\n#\u003d\u003d\u003d amoralej \u003d\u003d\u003d\npython-binary-memcached\npython-sysv_ipc\npython-yappi\n#\u003d\u003d\u003d apevec \u003d\u003d\u003d\n#\u003d\u003d\u003d hguemar \u003d\u003d\u003d\npython-json-logger\npython-ldappool\npython-scrypt\n#\u003d\u003d\u003d jcapitao \u003d\u003d\u003d\n#\u003d\u003d\u003d jpena \u003d\u003d\u003d\n#\u003d\u003d\u003d karolinku \u003d\u003d\u003d\n#\u003d\u003d\u003d ykarel \u003d\u003d\u003d",
+      "revId": "b429c315c5a47f9516cd56e0993c9f2984e8ad21",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
