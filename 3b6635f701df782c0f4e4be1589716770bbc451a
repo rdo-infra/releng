@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f16bd562_c81b1278",
+        "filename": "scripts/report-uc.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-02-01T10:30:37Z",
+      "side": 1,
+      "message": "I\u0027d avoid such non-self explanatory variable names, like v1,v2",
+      "revId": "3b6635f701df782c0f4e4be1589716770bbc451a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
