@@ -1,0 +1,6 @@
+- project:
+    name: review.rodproject.org/rdo-infra/releng
+    check:
+      jobs:
+        - rdo-toolbox-build-image
+

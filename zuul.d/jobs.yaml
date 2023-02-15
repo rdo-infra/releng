@@ -1,0 +1,6 @@
+- job:
+    name: rdo-toolbox-build-image
+    parent: base-minimal
+    description: |
+      Job to build the RDO toolbox container image
+    run: playbooks/build-container-image/run.yaml
