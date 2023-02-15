@@ -1,0 +1,5 @@
+- project:
+    check:
+      jobs:
+        - rdo-toolbox-build-image
+

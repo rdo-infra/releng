@@ -1,0 +1,8 @@
+git-review
+rdopkg
+tox
+git+https://github.com/rdo-infra/releng
+# TODO(jcapitao): remove the line below once 
+# https://softwarefactory-project.io/r/c/distroinfo/+/27414
+# is merged
+git+https://softwarefactory-project.io/r/distroinfo@refs/changes/14/27414/1
