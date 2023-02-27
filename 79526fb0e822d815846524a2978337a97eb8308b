@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "50c22f3b_aa8b80df",
+        "filename": "Containerfile",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-02-27T13:33:00Z",
+      "side": 1,
+      "message": "There are several tools (e.g fedpkg, mock, centos-packager) that are provided in Fedora but not in CS core. Of course we can manage to add them but I think this will add more work at the end. On the other hand, as it\u0027s a only dev tool, I think it\u0027s better to consume new stuff from Fedora, and catch\u0026fix issue there. But I\u0027m opened to discussion",
+      "parentUuid": "d0385fe4_14398715",
+      "revId": "79526fb0e822d815846524a2978337a97eb8308b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f51708fa_6543af70",
         "filename": "container/etc/profile.d/rdo-profile.sh",
         "patchSetId": 7
@@ -31,6 +49,24 @@
       "writtenOn": "2023-02-27T12:45:35Z",
       "side": 1,
       "message": "i\u0027m wondering if there is any option to avoid hardcoding those versions.\nIf not, I will pass it as params or *at least* leave it empty",
+      "revId": "79526fb0e822d815846524a2978337a97eb8308b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0306d4bc_57d56927",
+        "filename": "container/etc/profile.d/rdo-profile.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-02-27T13:33:00Z",
+      "side": 1,
+      "message": "Right, I think I have a solution, lemme propose a new PS",
+      "parentUuid": "f51708fa_6543af70",
       "revId": "79526fb0e822d815846524a2978337a97eb8308b",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
