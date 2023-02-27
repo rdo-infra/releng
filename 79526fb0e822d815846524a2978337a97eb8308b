@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0385fe4_14398715",
+        "filename": "Containerfile",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-02-27T12:45:35Z",
+      "side": 1,
+      "message": "are you sure about basing on Fedora 37? Fedora is fast-releasing, to we will have to follow and keep up to date",
+      "revId": "79526fb0e822d815846524a2978337a97eb8308b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f51708fa_6543af70",
+        "filename": "container/etc/profile.d/rdo-profile.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-02-27T12:45:35Z",
+      "side": 1,
+      "message": "i\u0027m wondering if there is any option to avoid hardcoding those versions.\nIf not, I will pass it as params or *at least* leave it empty",
+      "revId": "79526fb0e822d815846524a2978337a97eb8308b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
