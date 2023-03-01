@@ -1,5 +1,10 @@
 #!/bin/bash
 
+set -e
+set -x
+
+
+MASTER_RELEASE="antelope"
 REALPATH=$(realpath "$0")
 DIRNAME=$(dirname "$REALPATH")
 source $DIRNAME/common.rc
@@ -19,7 +24,7 @@ PACKAGE_INFO=$(rdopkg findpkg $PKG)
 
 echo -e "Cloning $PKG repo..."
 rm -rf $PKG
-rdopkg clone $PKG >/dev/null 2>&1
+rdopkg clone $PKG #>/dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "ERROR when cloning $PKG"
     exit 1
@@ -45,8 +50,7 @@ COMPONENT=$(echo "$PACKAGE_INFO" | grep -e "component"|awk '{print $2}')
 get_current_nvr_in_trunk $PKG $COMPONENT
 echo -e "Last build in RDO Trunk is:\t $CURRENT_NVR_IN_TRUNK"
 
-TAG=`git describe --abbrev=0 upstream/stable/$MASTER_RELEASE 2>/dev/null`
-if [ $? -ne 0 ]; then
+if ! `git describe --abbrev=0 upstream/stable/$MASTER_RELEASE 2>/dev/null`; then
     echo "There is NOT stable tag found for '$MASTER_RELEASE', checking on 'master' tag."
     TAG=`git describe --tag --abbrev=0 upstream/master 2>/dev/null`
 fi
@@ -64,6 +68,9 @@ if [ $TAG == $LAST_VERSION ]; then
 fi
 
 rdopkg new-version -U -b $TAG -u RDO -e dev@lists.rdoproject.org -t -d
+
+pwd
+. ../edit_gpg.sh $PKG/$PKG.spec
 
 echo "Press 2 key to submit review to Gerrit:"
 read -n 2
