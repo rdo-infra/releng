@@ -87,6 +87,24 @@
       "parentUuid": "0306d4bc_57d56927",
       "revId": "79526fb0e822d815846524a2978337a97eb8308b",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c36d721_48c9e4f6",
+        "filename": "container/etc/profile.d/rdo-profile.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-02T12:21:24Z",
+      "side": 1,
+      "message": "I like it!",
+      "parentUuid": "ba9e3a7c_6a3fa646",
+      "revId": "79526fb0e822d815846524a2978337a97eb8308b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
