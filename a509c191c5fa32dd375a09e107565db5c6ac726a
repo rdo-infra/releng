@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "101f9713_455df46f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-06T15:34:02Z",
+      "side": 1,
+      "message": "I left some comments",
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0112352_76d63d6a",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-06T15:34:02Z",
+      "side": 1,
+      "message": "We can use the name of the script to create a dedicated workdir as below\n\nBASENAME\u003d$(basename \"$0\")\nTMPDIR\u003d/tmp/${BASENAME%.*}\n\nwe do it in https://github.com/rdo-infra/releng/blob/master/scripts/new_release_scripts/pin-non_os-puppet.sh#L6-L7",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 12
+      },
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fefe113c_58ab1d96",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-06T15:34:02Z",
+      "side": 1,
+      "message": "We can take advantage of the env var of the rdo toolbox here with RDO_MASTER_RELEASE and RDO_LATEST_RELEASE\n\nor source the common.rc file [1] as we do in [2]\n\n[1] https://github.com/rdo-infra/releng/blob/master/scripts/new_release_scripts/common.rc\n[2] https://github.com/rdo-infra/releng/blob/master/scripts/new_release_scripts/pin-non_os-puppet.sh#L11",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 90
+      },
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8fb7272b_2269166c",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-06T15:34:02Z",
+      "side": 1,
+      "message": "I\u0027d add the sub-folder resources $WORKDIR/$RSRC_REPO_NAME/resources",
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
