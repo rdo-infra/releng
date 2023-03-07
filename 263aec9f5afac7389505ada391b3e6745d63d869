@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "af8f0df1_82d10ec0",
+        "filename": "scripts/new_release_scripts/cross_tag",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-07T12:48:02Z",
+      "side": 1,
+      "message": "nit: I\u0027d suggest \"if ! grep -q\" contruction, its is more robust, and its avoiding rc checking",
+      "revId": "263aec9f5afac7389505ada391b3e6745d63d869",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c96264a_36db6b2d",
+        "filename": "scripts/new_release_scripts/cross_tag",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-07T12:48:02Z",
+      "side": 1,
+      "message": "I\u0027d move it up, to L22, to keep this packages check in one place",
+      "revId": "263aec9f5afac7389505ada391b3e6745d63d869",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d735472_20bab4a4",
+        "filename": "scripts/new_release_scripts/cross_tag",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-07T12:48:02Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "263aec9f5afac7389505ada391b3e6745d63d869",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f3958e8_daf1532b",
+        "filename": "scripts/new_release_scripts/cross_tag",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-07T12:48:02Z",
+      "side": 1,
+      "message": "cmd\u003d\"cbs list-tagged cloud9s-openstack-$dst_release-candidate | grep -q $src_build\"\nif \"$cmd\"; then...",
+      "revId": "263aec9f5afac7389505ada391b3e6745d63d869",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8676f5b_7377ead0",
+        "filename": "scripts/new_release_scripts/cross_tag",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-07T12:48:02Z",
+      "side": 1,
+      "message": "I add tip for user, like: \"press Y/y to confirm\"",
+      "revId": "263aec9f5afac7389505ada391b3e6745d63d869",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
