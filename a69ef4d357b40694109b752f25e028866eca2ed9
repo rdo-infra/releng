@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "edd74d0c_7167357a",
+        "filename": "container/etc/profile.d/rdo-profile.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-03-10T12:13:01Z",
+      "side": 1,
+      "message": "I like this function.\n\npotential improvement, if repo_name is not in projects_git_url, error message and exit 1",
+      "range": {
+        "startLine": 44,
+        "startChar": 9,
+        "endLine": 44,
+        "endChar": 23
+      },
+      "revId": "a69ef4d357b40694109b752f25e028866eca2ed9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c0dc4754_2bb0472d",
+        "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-03-10T12:13:01Z",
+      "side": 1,
+      "message": "Honestly, i think it\u0027d be good to be able to run it out of rdo-toolbox. iirc, the path to rdo-profile.sh, couldn\u0027t be found from $REALPATH?",
+      "range": {
+        "startLine": 12,
+        "startChar": 4,
+        "endLine": 12,
+        "endChar": 26
+      },
+      "revId": "a69ef4d357b40694109b752f25e028866eca2ed9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
