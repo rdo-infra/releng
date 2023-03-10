@@ -22,6 +22,30 @@
       },
       "revId": "a6b35b5e1415949b4f1e696a1125e349e9bf95ab",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "59ab5906_c842ad61",
+        "filename": "scripts/new_release_scripts/cross_tag",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-10T15:13:32Z",
+      "side": 1,
+      "message": "Yes but the scope of this script is to cross-tag the builds during release preparation, before we promote all the builds to -testing.\nBut let\u0027s enlarge the scope to handle your case in follow-up patch",
+      "parentUuid": "c8fbc9d6_f8758997",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 27
+      },
+      "revId": "a6b35b5e1415949b4f1e696a1125e349e9bf95ab",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
