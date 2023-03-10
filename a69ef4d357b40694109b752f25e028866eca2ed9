@@ -24,6 +24,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2122d26_4b8ad280",
+        "filename": "container/etc/profile.d/rdo-profile.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-10T13:58:43Z",
+      "side": 1,
+      "message": "Good point, I fixed in PS2",
+      "parentUuid": "edd74d0c_7167357a",
+      "range": {
+        "startLine": 44,
+        "startChar": 9,
+        "endLine": 44,
+        "endChar": 23
+      },
+      "revId": "a69ef4d357b40694109b752f25e028866eca2ed9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c0dc4754_2bb0472d",
@@ -37,6 +61,30 @@
       "writtenOn": "2023-03-10T12:13:01Z",
       "side": 1,
       "message": "Honestly, i think it\u0027d be good to be able to run it out of rdo-toolbox. iirc, the path to rdo-profile.sh, couldn\u0027t be found from $REALPATH?",
+      "range": {
+        "startLine": 12,
+        "startChar": 4,
+        "endLine": 12,
+        "endChar": 26
+      },
+      "revId": "a69ef4d357b40694109b752f25e028866eca2ed9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1776679_b6b8f272",
+        "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-10T13:58:43Z",
+      "side": 1,
+      "message": "Actually we can handle the both case.\nI fixed it in PS2",
+      "parentUuid": "c0dc4754_2bb0472d",
       "range": {
         "startLine": 12,
         "startChar": 4,
