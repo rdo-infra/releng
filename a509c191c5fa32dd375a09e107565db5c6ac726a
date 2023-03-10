@@ -41,6 +41,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4215eb2d_7f3906cf",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-10T13:23:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0112352_76d63d6a",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 12
+      },
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fefe113c_58ab1d96",
@@ -66,6 +90,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ffada8de_9b456ec9",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-10T13:23:18Z",
+      "side": 1,
+      "message": "yes, but they are hardcoded there:( I prefer to keep it self-maintained",
+      "parentUuid": "fefe113c_58ab1d96",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 90
+      },
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8fb7272b_2269166c",
         "filename": "scripts/new_release_scripts/branch_projects.sh",
         "patchSetId": 2
@@ -77,6 +125,24 @@
       "writtenOn": "2023-03-06T15:34:02Z",
       "side": 1,
       "message": "I\u0027d add the sub-folder resources $WORKDIR/$RSRC_REPO_NAME/resources",
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "401ab2b9_5e3ea8f8",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-10T13:23:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8fb7272b_2269166c",
       "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
