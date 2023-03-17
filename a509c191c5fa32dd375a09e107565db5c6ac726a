@@ -112,6 +112,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d5b98e8_54a677b8",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-17T13:21:34Z",
+      "side": 1,
+      "message": "Ok let\u0027s keep them self-maintained",
+      "parentUuid": "ffada8de_9b456ec9",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 90
+      },
+      "revId": "a509c191c5fa32dd375a09e107565db5c6ac726a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8fb7272b_2269166c",
