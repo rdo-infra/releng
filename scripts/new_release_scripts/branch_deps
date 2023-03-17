@@ -1,0 +1,46 @@
+#!/bin/bash
+set -e
+
+REALPATH=$(realpath "$0")
+DIRNAME=$(dirname "$REALPATH")
+BASENAME=$(basename "$0")
+TMPDIR=/tmp/${BASENAME%.*}
+
+CONFIG_DIR=$TMPDIR/config
+VIRTUAL_ENV=$TMPDIR/.venv
+RDO_BASH_PROFILE="/etc/profile.d/rdo-profile.sh"
+
+if [ -f $RDO_BASH_PROFILE ]; then
+    source $RDO_BASH_PROFILE
+else
+    source $DIRNAME/../../container/etc/profile.d/rdo-profile.sh
+fi
+
+mkdir -p $TMPDIR
+pushd $TMPDIR >/dev/null
+echo -e "Working on $TMPDIR directory"
+
+# If we are not in the rdo-toolbox, then we should install the dependencies needed
+if [ ! -f $RDO_BASH_PROFILE ]; then
+    echo -e "Creating virtualenv..."
+    virtualenv -p /usr/bin/python3 $VIRTUAL_ENV >/dev/null
+    source $VIRTUAL_ENV/bin/activate >/dev/null
+    echo -e "Installing required modules in virtualenv..."
+    python -m pip install --upgrade pip >/dev/null
+    pip install distroinfo >/dev/null
+    pip install git+https://github.com/rdo-infra/releng >/dev/null
+    pip install rdopkg >/dev/null
+    echo -e "Creating of virtualenv OK"
+fi
+
+rdo_clone_repo config
+rdopkg info conf:.-*dependency | grep -e "name:" | sort | awk '{print $2}' > deps
+python3 -c "from rdoutils import resources_utils as ru ; ru.branch_dependencies_from_file('deps', 'c9s-${RDO_NEXT_RELEASE}-rdo', 'c9s-${RDO_MASTER_RELEASE}-rdo', 'config')"
+
+pushd $CONFIG_DIR >/dev/null
+git add resources/*
+git commit -m "Create ${RDO_MASTER_RELEASE} branch for dependencies"
+popd >/dev/null
+
+echo -e "\nYou can check results in $CONFIG_DIR"
+echo -e "If everyting's fine you can run the command: git review -t ${RDO_MASTER_RELEASE}-branching"
