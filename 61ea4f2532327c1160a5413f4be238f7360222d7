@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6568a16a_4c30f833",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-03-17T13:17:12Z",
+      "side": 1,
+      "message": "Could we consume those packages from a file in order to not edit this script when we want to branch extra project (e.g projects that needs to be branched later for whatever reason)",
+      "range": {
+        "startLine": 84,
+        "startChar": 8,
+        "endLine": 84,
+        "endChar": 23
+      },
+      "revId": "61ea4f2532327c1160a5413f4be238f7360222d7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
