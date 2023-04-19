@@ -7,16 +7,17 @@ PKG=$1
 BASEDIR=$2
 
 # Adjust as needed
-FEDUSER=amoralej
-FEDORA_RELEASE=34
-RDO_RELEASE=victoria
-CHANGELOG_NAME="Alfredo Moralejo"
-CHANGELOG_MAIL=amoralej@redhat.com
-#
+FEDUSER=
+# the number should be current rawhide
+FEDORA_RELEASE=
+RDO_RELEASE=
+# name and mail used to create changelog entry
+CHANGELOG_NAME=
+CHANGELOG_MAIL=
 
 FEDORA_TAG=f${FEDORA_RELEASE}
 FEDORA_DIST=fc${FEDORA_RELEASE}
-CBS_TAG_PREFIX="cloud8"
+CBS_TAG_PREFIX="cloud9s"
 
 INITIAL_DIR=$PWD
 
