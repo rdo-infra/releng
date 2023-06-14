@@ -50,6 +50,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "97a2dc4d_0cb12d5e",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-14T14:03:02Z",
+      "side": 1,
+      "message": "+1 to remove only the \"^Requires:.*python3*\" lines",
+      "parentUuid": "9eecec8c_93e29f2b",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 75,
+        "endChar": 22
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e13e8412_2111ac96",
         "filename": "scripts/upgrade_spec.sh",
         "patchSetId": 2
@@ -97,6 +121,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3d84772c_18a32a6d",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-14T14:03:02Z",
+      "side": 1,
+      "message": "Yes, it\u0027s similar (%pyproject_buildrequires equals %pyproject_buildrequires -t -e %{default_toxenv}) as per [1][2][3]\n\n+1 for the consistency point-of-view\n\n[1] https://github.com/rdo-common/pyproject-rpm-macros/blob/c8s-zed-rdo/pyproject_buildrequires.py#L499-L501C39\n[2] https://github.com/rdo-common/pyproject-rpm-macros/blob/a9b7d59ebefcab7face6b6ea2e8d88de10de4e05/macros.pyproject#L172\n[3] https://github.com/rdo-common/pyproject-rpm-macros/blob/a9b7d59ebefcab7face6b6ea2e8d88de10de4e05/macros.pyproject#L123-L124",
+      "parentUuid": "e13e8412_2111ac96",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 16
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "145eec40_c494995f",
         "filename": "scripts/upgrade_spec.sh",
         "patchSetId": 2
@@ -108,6 +156,30 @@
       "writtenOn": "2023-06-14T10:52:11Z",
       "side": 1,
       "message": "We have the option to use %pyproject_save_files %{service} together with -f %{pyproject_files} in %files for the package containing the module as we did in glance:\n\nhttps://review.rdoproject.org/r/c/openstack/glance-distgit/+/46574/4/openstack-glance.spec#155\n\nWhile it\u0027s included in the python guidelines https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/ , i\u0027d say the only value it provides is saving some lines like:\n\n%{python3_sitelib}/glance\n%{python3_sitelib}/glance-*.egg-info\n\nwhich usually do not change much. Other advantadge is that it avoids getting files which match those blobs which are not included in the list of files in the python module (which i\u0027m not sure under which case it may happen).\n\nwdyt?",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 18
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79588030_f456ca23",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-14T14:03:02Z",
+      "side": 1,
+      "message": "It also includes LICENSE file if it\u0027s specified in the metadata but not the README [1]\n\nhttps://docs.fedoraproject.org/en-US/packaging-guidelines/Python/",
+      "parentUuid": "145eec40_c494995f",
       "range": {
         "startLine": 111,
         "startChar": 0,
