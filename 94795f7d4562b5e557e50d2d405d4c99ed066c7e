@@ -188,6 +188,30 @@
       },
       "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5df2e44_e83c0fc0",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-14T15:44:06Z",
+      "side": 1,
+      "message": "If we don\u0027t use the %pyproject_save_files %{service} together with -f %{pyproject_files} we should then sed \"s/egg/dist/\u0027",
+      "parentUuid": "79588030_f456ca23",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 18
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
