@@ -72,6 +72,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ddaac027_ec10cbe7",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-14T16:27:53Z",
+      "side": 1,
+      "message": "There are some BRs that we always want to get rid of as in \nhttps://review.rdoproject.org/r/c/openstack/oslo-config-distgit/+/46674/2/python-oslo-config.spec#95\n\nsed -i \u0027/^doc8.*/d\u0027 doc/requirements.txt\nsed -i \u0027/^pre-commit.*/d\u0027 test-requirements.txt\nsed -i \u0027/^bandit.*/d\u0027 test-requirements.txt\nsed -i \u0027/^hacking.*/d\u0027 test-requirements.txt\n\n(and probably more will appear)\n\nWhat if we always add those lines in %prep ?",
+      "parentUuid": "596bc35a_8a4e07a9",
+      "range": {
+        "startLine": 141,
+        "startChar": 9,
+        "endLine": 141,
+        "endChar": 25
+      },
+      "revId": "1148e2fad75540671f66238d8a68342c6302b393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a149d7b1_52ab58fa",
         "filename": "scripts/upgrade_spec.sh",
         "patchSetId": 3
@@ -83,6 +107,24 @@
       "writtenOn": "2023-06-14T15:10:08Z",
       "side": 1,
       "message": "A couple more things that could be implemented:\n\n- replacing sphinx-build command by \"%tox -edocs\" as in:\nhttps://review.rdoproject.org/r/c/openstack/oslo-config-distgit/+/46674/2/python-oslo-config.spec#117\n\n- replacing stestr in %check by %tox -e %{default_toxenv} (i\u0027d ignore options at least in initial versions)\n\nhttps://review.rdoproject.org/r/c/openstack/oslo-config-distgit/+/46674/2/python-oslo-config.spec#135",
+      "revId": "1148e2fad75540671f66238d8a68342c6302b393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e738b401_ae6a9bed",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-14T16:27:53Z",
+      "side": 1,
+      "message": "one more, we should be able to remove any line containing python_provide, that\u0027s also deprecated.\n\nhttps://docs.fedoraproject.org/en-US/packaging-guidelines/Python/#_deprecated_macros",
+      "parentUuid": "a149d7b1_52ab58fa",
       "revId": "1148e2fad75540671f66238d8a68342c6302b393",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
