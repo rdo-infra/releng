@@ -212,6 +212,30 @@
       },
       "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "124c4bd0_ce86724c",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:26:04Z",
+      "side": 1,
+      "message": "I agree to not fix %files automatically",
+      "parentUuid": "c5df2e44_e83c0fc0",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 18
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }

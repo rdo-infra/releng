@@ -50,6 +50,57 @@
       "message": "why counting instead of checking with -q? if it won\u0027t find the pattern it will exit with 1 and terminate script (note set -x).",
       "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff74659a_66de3a8d",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:26:04Z",
+      "side": 1,
+      "message": "note that script will fail, if sed doesn\u0027t find %{py3_build} pattern\n(removed condition was securing from that)",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d88f9f65_6dd32e36",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:26:04Z",
+      "side": 1,
+      "message": "same like in L160",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4de626bf_36c6c518",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:26:04Z",
+      "side": 1,
+      "message": "what if it will be 2-line comment?",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
