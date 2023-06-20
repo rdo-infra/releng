@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eee01a99_32862f58",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:10:35Z",
+      "side": 1,
+      "message": "I like this solution with TEMPREMOVE!",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3cabf16e_6164744b",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:10:35Z",
+      "side": 1,
+      "message": "-P is perl-regexp, isn\u0027t it just regular regexp?",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "17c1ab8a_b34104db",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-20T13:10:35Z",
+      "side": 1,
+      "message": "why counting instead of checking with -q? if it won\u0027t find the pattern it will exit with 1 and terminate script (note set -x).",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
