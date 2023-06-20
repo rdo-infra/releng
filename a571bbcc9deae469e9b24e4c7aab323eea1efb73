@@ -54,6 +54,42 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fbb55bcd_2585004e",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-20T13:32:58Z",
+      "side": 1,
+      "message": "No, apparently grep doesn\u0027t parse negative lookahead without -P (dunno why).",
+      "parentUuid": "3cabf16e_6164744b",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c82b0acb_707919ac",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-20T13:32:58Z",
+      "side": 1,
+      "message": "Note that, in bash, set -e (from bash manpage):\n\nThe shell does not exit if the command that fails is part of the command list immediately following a while or until keyword, part of the test following  the if or elif reserved words ...\n\nboth can work, it\u0027s just personal preference, i find it more easy to read. I can change to -q for consistency with other conditionals in the script if you prefer, np.",
+      "parentUuid": "17c1ab8a_b34104db",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ff74659a_66de3a8d",
         "filename": "scripts/upgrade_spec.sh",
         "patchSetId": 10
@@ -65,6 +101,24 @@
       "writtenOn": "2023-06-20T13:26:04Z",
       "side": 1,
       "message": "note that script will fail, if sed doesn\u0027t find %{py3_build} pattern\n(removed condition was securing from that)",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25f5d66d_45546aa0",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-20T13:32:58Z",
+      "side": 1,
+      "message": "afaik, sed does not considers that a failure and returns 0 if it does not find the pattern so we can run it with no conditional.",
+      "parentUuid": "ff74659a_66de3a8d",
       "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
@@ -99,6 +153,24 @@
       "writtenOn": "2023-06-20T13:26:04Z",
       "side": 1,
       "message": "what if it will be 2-line comment?",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8265c6d6_5568706d",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-20T13:32:58Z",
+      "side": 1,
+      "message": "see my reply before.",
+      "parentUuid": "4de626bf_36c6c518",
       "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
