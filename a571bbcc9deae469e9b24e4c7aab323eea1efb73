@@ -173,6 +173,24 @@
       "parentUuid": "4de626bf_36c6c518",
       "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5e6580a_899ead98",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-20T13:39:11Z",
+      "side": 1,
+      "message": "forget my previous message here, gerrit mixed my replies. I\u0027ve checked in https://review.rdoproject.org/codesearch/?q\u003drm.*requirements\u0026i\u003dnope\u0026literal\u003dnope\u0026files\u003d.*spec\u0026excludeFiles\u003d\u0026repos\u003d and comments before removing requirements file are in the previous line with very few (if any) exceptions. Note that increasing the number of lines may end up removing comments unrelated to this.",
+      "parentUuid": "8265c6d6_5568706d",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
