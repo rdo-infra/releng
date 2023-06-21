@@ -24,6 +24,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "789bf12c_dca6d73f",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7336a2b4_c40adc14",
+      "range": {
+        "startLine": 122,
+        "startChar": 55,
+        "endLine": 122,
+        "endChar": 64
+      },
+      "revId": "1148e2fad75540671f66238d8a68342c6302b393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3cdfb9c_6abf38fb",
@@ -37,6 +61,30 @@
       "writtenOn": "2023-06-14T15:10:08Z",
       "side": 1,
       "message": "Note that we use %{service} only in openstack services, for libraries or clients we use other macros as sname or pypi_name (or in some weird cases even a different one). see:\n\nhttps://review.rdoproject.org/r/c/openstack/oslo-config-distgit/+/46674/2/python-oslo-config.spec\n\nActually, that\u0027s one of the reasons i\u0027m still not sure if we should use pyproject_save_files or not...",
+      "range": {
+        "startLine": 136,
+        "startChar": 71,
+        "endLine": 136,
+        "endChar": 81
+      },
+      "revId": "1148e2fad75540671f66238d8a68342c6302b393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43104846_3fb232b2",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a3cdfb9c_6abf38fb",
       "range": {
         "startLine": 136,
         "startChar": 71,
@@ -149,6 +197,24 @@
       "side": 1,
       "message": "one more, we should be able to remove any line containing python_provide, that\u0027s also deprecated.\n\nhttps://docs.fedoraproject.org/en-US/packaging-guidelines/Python/#_deprecated_macros",
       "parentUuid": "a149d7b1_52ab58fa",
+      "revId": "1148e2fad75540671f66238d8a68342c6302b393",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "928db65b_09f20faa",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e738b401_ae6a9bed",
       "revId": "1148e2fad75540671f66238d8a68342c6302b393",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }

@@ -72,6 +72,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b838a373_77a9167c",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "97a2dc4d_0cb12d5e",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 75,
+        "endChar": 22
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e13e8412_2111ac96",
@@ -133,6 +157,30 @@
       "side": 1,
       "message": "Yes, it\u0027s similar (%pyproject_buildrequires equals %pyproject_buildrequires -t -e %{default_toxenv}) as per [1][2][3]\n\n+1 for the consistency point-of-view\n\n[1] https://github.com/rdo-common/pyproject-rpm-macros/blob/c8s-zed-rdo/pyproject_buildrequires.py#L499-L501C39\n[2] https://github.com/rdo-common/pyproject-rpm-macros/blob/a9b7d59ebefcab7face6b6ea2e8d88de10de4e05/macros.pyproject#L172\n[3] https://github.com/rdo-common/pyproject-rpm-macros/blob/a9b7d59ebefcab7face6b6ea2e8d88de10de4e05/macros.pyproject#L123-L124",
       "parentUuid": "e13e8412_2111ac96",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 16
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af369d0a_20debf46",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3d84772c_18a32a6d",
       "range": {
         "startLine": 99,
         "startChar": 0,
@@ -228,6 +276,30 @@
       "side": 1,
       "message": "I agree to not fix %files automatically",
       "parentUuid": "c5df2e44_e83c0fc0",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 18
+      },
+      "revId": "94795f7d4562b5e557e50d2d405d4c99ed066c7e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b104faae_d790d464",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "124c4bd0_ce86724c",
       "range": {
         "startLine": 111,
         "startChar": 0,

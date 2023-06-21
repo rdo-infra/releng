@@ -16,6 +16,24 @@
       "message": "Usage: `basename $0` [phase] SPEC_FILE",
       "revId": "8c502052d6122e0aa19e1c00a7e0aa8d107862d2",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6380d65a_cff4eb35",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "18a24313_73481537",
+      "revId": "8c502052d6122e0aa19e1c00a7e0aa8d107862d2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }

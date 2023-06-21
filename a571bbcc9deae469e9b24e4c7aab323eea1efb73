@@ -18,6 +18,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "21ad9437_dff64710",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eee01a99_32862f58",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3cabf16e_6164744b",
@@ -88,6 +106,42 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9f92837_b43bd4a0",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c82b0acb_707919ac",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "acd4d1e5_be05c225",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fbb55bcd_2585004e",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ff74659a_66de3a8d",
@@ -123,6 +177,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d21faa75_e40e8a89",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "25f5d66d_45546aa0",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d88f9f65_6dd32e36",
@@ -136,6 +208,24 @@
       "writtenOn": "2023-06-20T13:26:04Z",
       "side": 1,
       "message": "same like in L160",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab52e283_c05812a3",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d88f9f65_6dd32e36",
       "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
@@ -189,6 +279,24 @@
       "side": 1,
       "message": "forget my previous message here, gerrit mixed my replies. I\u0027ve checked in https://review.rdoproject.org/codesearch/?q\u003drm.*requirements\u0026i\u003dnope\u0026literal\u003dnope\u0026files\u003d.*spec\u0026excludeFiles\u003d\u0026repos\u003d and comments before removing requirements file are in the previous line with very few (if any) exceptions. Note that increasing the number of lines may end up removing comments unrelated to this.",
       "parentUuid": "8265c6d6_5568706d",
+      "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3feedfc8_7d8433b0",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-21T08:04:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c5e6580a_899ead98",
       "revId": "a571bbcc9deae469e9b24e4c7aab323eea1efb73",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
