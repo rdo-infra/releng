@@ -22,6 +22,30 @@
       },
       "revId": "8803b159fc932ea81015111fc383349fcbbb3eb5",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2eb355d2_0da67d08",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 12
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-21T12:14:36Z",
+      "side": 1,
+      "message": "sed -i \"/^BuildRequires:.*python3-devel/{p;s/python3-devel/pyproject-rpm-macros/g;}\" \"$SPEC_FILE\"",
+      "parentUuid": "b6d9a69e_ff3f67eb",
+      "range": {
+        "startLine": 134,
+        "startChar": 4,
+        "endLine": 134,
+        "endChar": 69
+      },
+      "revId": "8803b159fc932ea81015111fc383349fcbbb3eb5",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
