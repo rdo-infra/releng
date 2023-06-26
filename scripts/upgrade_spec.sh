@@ -35,8 +35,8 @@ function help(){
 
   echo
   echo "--fix-license - to fix license format"
-  echo "--remove-requires - to clean all hardcoded run-time reqs"
-  echo "--remove-brequires - to clean all hardcoded build reqs"
+  echo "--remove-req - to clean all hardcoded run-time reqs"
+  echo "--remove-breq - to clean all hardcoded build reqs"
   echo "--add-macros - add pyproject-rpm-macros BR and generator"
   echo "--protect-reqs-txt - remove all modification on requirements.txt file"
   echo "--replace-macros - replace depracated macros"
@@ -93,7 +93,7 @@ function remove_requires {
     # with "#" with newline
     # just removing comment will cause with line number shifting
     sed -i "$(( line - 3 )),$(( line - 1 )){s/^#.*/TEMPREMOVE/g;}" "$SPEC_FILE"
-    sed -i "$(( line - 3 )),$(( line - 1 )){s/^%if.*/TEMPREMOVE/g;}" "$SPEC_FILE"
+    sed -i "$(( line - 3 )),$(( line - 1 )){/with_doc/! {/with_test/! s/^%if.*/TEMPREMOVE/g;}}" "$SPEC_FILE"
     sed -i "$(( line + 1 )),$(( line + 3 )){s/^%else.*/TEMPREMOVE/g;}" "$SPEC_FILE"
     sed -i "$(( line + 1 )),$(( line + 3 )){s/^%endif.*/TEMPREMOVE/g;}" "$SPEC_FILE"
     # Remove blank lines after removed requirements
@@ -115,7 +115,7 @@ function remove_brequires {
   matched_lines=$(grep -n -P '^BuildRequires:(?!.*python3-devel.*).*python.*' "$SPEC_FILE" | cut -f1 -d":")
   while IFS= read -r line; do
     sed -i "$(( line - 3 )),$(( line - 1 )){s/^#.*/TEMPREMOVE/g;}" "$SPEC_FILE"
-    sed -i "$(( line - 3 )),$(( line - 1 )){s/^%if.*/TEMPREMOVE/g;}" "$SPEC_FILE"
+    sed -i "$(( line - 3 )),$(( line - 1 )){/with_doc/! {/with_test/! s/^%if.*/TEMPREMOVE/g;}}" "$SPEC_FILE"
     sed -i "$(( line + 1 )),$(( line + 3 )){s/^%else.*/TEMPREMOVE/g;}" "$SPEC_FILE"
     sed -i "$(( line + 1 )),$(( line + 3 )){s/^%endif.*/TEMPREMOVE/g;}" "$SPEC_FILE"
     # Remove blank lines after removed build requirements
