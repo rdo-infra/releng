@@ -16,6 +16,24 @@
       "message": "I\u0027m not sure if range is still needed, if we operate only on single one, like:\n sed -i \"$(( rm_line - 1 )){/^#.*/d;}\" \"$SPEC_FILE\"",
       "revId": "6963ca67c9f2153a4a96bd6592af797a98e34049",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ad80f8d_8566816d",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-27T12:42:13Z",
+      "side": 1,
+      "message": "I didn\u0027t know that was possible, thanks!",
+      "parentUuid": "a3e095ce_e0281c6a",
+      "revId": "6963ca67c9f2153a4a96bd6592af797a98e34049",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
