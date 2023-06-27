@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "809fd32d_ade9be73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-27T09:45:08Z",
+      "side": 1,
+      "message": "The actual bug in that behavior is not removing the %endif, not removing the BRs or Requires.",
+      "revId": "100f72473ed908d7f07d8afdb8952f6101b0b493",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
