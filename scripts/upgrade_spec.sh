@@ -161,8 +161,8 @@ function replace_depracated_macros {
   sed -i -E "s/%\{?py3_build\}?.*/%pyproject_wheel/g" "$SPEC_FILE"
   sed -i -E "s/%\{?py3_install\{?.*/%pyproject_install/g" "$SPEC_FILE"
   sed -i '/.*python_provide.*/d' "$SPEC_FILE"
-
 }
+
 
 function replace_sphinx_build {
   sed -i '/^#/! s/.*sphinx-build.*html.*/%tox -e docs/g' "$SPEC_FILE"
@@ -208,9 +208,20 @@ sed -i '/^minversion.*/d' tox.ini\
 sed -i '/^requires.*virtualenv.*/d' tox.ini'
     sed -i "/^%build/i $sed_expr\n" "$SPEC_FILE"
   fi
+
   if ! grep -q excluded_brs  "$SPEC_FILE"; then
+    if ! grep -q "with_doc" $SPEC_FILE; then
+      sed -i "/%{!?upstream_version/a # we are excluding some BRs from automatic generator\n\
+%global excluded_brs doc8 bandit pre-commit hacking flake8-import-order sphinx openstackdocstheme" "$SPEC_FILE"
+    else
     sed -i "/%{!?upstream_version/a # we are excluding some BRs from automatic generator\n\
-%global excluded_brs doc8 bandit pre-commit hacking flake8-import-order" "$SPEC_FILE"
+%if ! 0%{?with_doc}\n\
+%global excluded_brs doc8 bandit pre-commit hacking flake8-import-order sphinx openstackdocstheme\n\
+%else\n\
+%global excluded_brs doc8 bandit pre-commit hacking flake8-import-order\n\
+%endif" "$SPEC_FILE"
+    fi
+
     sed -i "/^%build/i # Exclude some bad-known BRs\nfor pkg in %{excluded_brs};do\n\
   for reqfile in doc/requirements.txt test-requirements.txt; do\n\
     if [ -f \$reqfile ]; then\n\
@@ -219,12 +230,13 @@ sed -i '/^requires.*virtualenv.*/d' tox.ini'
   fi
 }
 
+
 function add_exclude_reqs {
 
   if ! grep -q excluded_reqs  "$SPEC_FILE"; then
     sed -i "/%{!?upstream_version/a # we are excluding some runtime reqs from automatic generator\n\
 %global excluded_reqs <add excluded list here>" "$SPEC_FILE"
-    sed -i "/^%generate_buildrequires/i # Exclude some bad-known runtime reqs\nfor pkg in %{excluded_reqs};do\n\
+    sed -i "/^%generate_buildrequires/i # Exclude some bad-known runtime reqs\nfor pkg in %{excluded_reqs}; do\n\
   sed -i "/^\${pkg}.*/d" requirements.txt\ndone\n" "$SPEC_FILE"
   fi
 
@@ -292,7 +304,6 @@ function final_cleanup {
   fi
 }
 
-
 #### MAIN ###
 
 case "$1" in
@@ -331,17 +342,14 @@ case "$1" in
 
   --adjust-prep)
     adjust_prep
-
     ;;
 
   --add-check)
     add_check_phase
-
     ;;
 
   --add-exclude-reqs)
     add_exclude_reqs
-
     ;;
 
   --all|-a)
