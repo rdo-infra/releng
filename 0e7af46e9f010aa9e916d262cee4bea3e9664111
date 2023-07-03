@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88bd5157_9649fbc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-03T12:40:12Z",
+      "side": 1,
+      "message": "I tested locally LGTM except the extra spaces which add a level of indentation ",
+      "revId": "0e7af46e9f010aa9e916d262cee4bea3e9664111",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a770db9b_bd272eb7",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-03T12:40:12Z",
+      "side": 1,
+      "message": "We should remove the extra spaces",
+      "range": {
+        "startLine": 312,
+        "startChar": 0,
+        "endLine": 314,
+        "endChar": 22
+      },
+      "revId": "0e7af46e9f010aa9e916d262cee4bea3e9664111",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
