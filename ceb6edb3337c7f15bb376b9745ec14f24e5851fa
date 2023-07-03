@@ -22,6 +22,30 @@
       },
       "revId": "ceb6edb3337c7f15bb376b9745ec14f24e5851fa",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "435448c9_0a2a82c8",
+        "filename": "scripts/upgrade_spec.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-07-03T09:56:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37f96668_f834e53c",
+      "range": {
+        "startLine": 213,
+        "startChar": 3,
+        "endLine": 213,
+        "endChar": 44
+      },
+      "revId": "ceb6edb3337c7f15bb376b9745ec14f24e5851fa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
