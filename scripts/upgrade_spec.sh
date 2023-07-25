@@ -79,14 +79,15 @@ function make_license_SPDX {
 
 function remove_requires {
 
-  if ! grep -q "^Requires" "$SPEC_FILE" ; then
+  python_requires_regexp="^Requires:(?!.*%{version}-%{release}.*).*python.*"
+  if ! grep -q "$python_requires_regexp" "$SPEC_FILE" ; then
     echo "No run-time requirements to remove found."
     return 0
   fi
   # list of number of lines containing Requires: python but not those containing
   # %{version}-%{release} pattern as that usually means that are dependencies on
   # subpackages of the same srpm.
-  matched_lines=$(grep -n -P '^Requires:(?!.*%{version}-%{release}.*).*python.*' "$SPEC_FILE" | cut -f1 -d":")
+  matched_lines=$(grep -n -P "$python_requires_regexp" "$SPEC_FILE" | cut -f1 -d":")
   while IFS= read -r line; do
     # for 3 lines before or after matched line, replace line started
     # with "#" with newline
