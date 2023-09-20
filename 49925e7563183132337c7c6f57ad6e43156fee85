@@ -22,6 +22,30 @@
       },
       "revId": "49925e7563183132337c7c6f57ad6e43156fee85",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f19bbd57_781a2363",
+        "filename": "scripts/new_release_scripts/branch_projects.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-09-20T12:40:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b6a905e_68bf1e93",
+      "range": {
+        "startLine": 53,
+        "startChar": 68,
+        "endLine": 53,
+        "endChar": 100
+      },
+      "revId": "49925e7563183132337c7c6f57ad6e43156fee85",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
