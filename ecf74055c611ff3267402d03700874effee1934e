@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96d046c5_fecfbb66",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-02T11:32:08Z",
+      "side": 1,
+      "message": "this will fail as soon as a pkg which does not have source-branch in the tag is checked. I think the right way is:\n\nif \u0027source-branch\u0027 in pkg[tag_type][tag].keys():",
+      "range": {
+        "startLine": 109,
+        "startChar": 20,
+        "endLine": 109,
+        "endChar": 59
+      },
+      "revId": "ecf74055c611ff3267402d03700874effee1934e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f089f7af_c0f6116c",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-02T11:32:08Z",
+      "side": 1,
+      "message": "I think, this logic is wrong. In this case package[tag_type][tag] will be something like { \u0027bobcat-uc\u0027: \u0027x.y.z }. So this would end up doing:\n\n```\n  source-branch:\n    source-branch: x.y.z\n``` \n\nalso, this patch is only managing \u0027source-branch\u0027 field, what if the modified field is other (actually, anything may potentially go under tag).\n\nMy recomendation would be to treat it differently. If tag_value is a dict (as in the cases we are updating tags), we should merge the value passed in tag_value with the existing one.\n\nNote that when updating a buildsys-tags the value will actually be a string, not a dict and should replace the existing value with the new one.",
+      "range": {
+        "startLine": 110,
+        "startChar": 0,
+        "endLine": 110,
+        "endChar": 1
+      },
+      "revId": "ecf74055c611ff3267402d03700874effee1934e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69bc1a0b_594bfe85",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-02T11:32:08Z",
+      "side": 1,
+      "message": "missing :",
+      "range": {
+        "startLine": 111,
+        "startChar": 20,
+        "endLine": 111,
+        "endChar": 24
+      },
+      "revId": "ecf74055c611ff3267402d03700874effee1934e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
