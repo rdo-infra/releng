@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "21e7ac94_a526d953",
+        "filename": "rdoutils/rdoinfo.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-02T13:35:27Z",
+      "side": 1,
+      "message": "My last comment in the previous PS is still valid:\n\nwhat if the required change is not for \"source-branch\" field but a different one?. Note that under \u0027tags\u0027 we may override any package field, component, upstream, master-distgit, etc... so we should be able to ammend any of them without impacting the others",
+      "range": {
+        "startLine": 110,
+        "startChar": 23,
+        "endLine": 113,
+        "endChar": 71
+      },
+      "revId": "a707337419abaa3c5899a1af12961c8071ee1827",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
