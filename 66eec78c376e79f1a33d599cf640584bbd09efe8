@@ -41,6 +41,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e9f84cd_1a79b24d",
+        "filename": "scripts/new_release_scripts/pin_tempest_plugins.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-05T09:21:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b7f1fe05_f74c2763",
+      "range": {
+        "startLine": 18,
+        "startChar": 14,
+        "endLine": 18,
+        "endChar": 15
+      },
+      "revId": "66eec78c376e79f1a33d599cf640584bbd09efe8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5882b32a_a17d3376",
@@ -54,6 +78,24 @@
       "writtenOn": "2023-10-03T14:58:51Z",
       "side": 1,
       "message": "nit: whitespace",
+      "revId": "66eec78c376e79f1a33d599cf640584bbd09efe8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa7c5288_3954f3bb",
+        "filename": "scripts/new_release_scripts/pin_tempest_plugins.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-05T09:21:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5882b32a_a17d3376",
       "revId": "66eec78c376e79f1a33d599cf640584bbd09efe8",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
