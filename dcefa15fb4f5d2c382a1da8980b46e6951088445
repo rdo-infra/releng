@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3bdcc6b4_7f72bbc6",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "we should make this script configurable to work different releases, not only master.\n\nNote that, in the job where we will use this script [1] we have already logic to discover git branch for the release (GIT_BRANCH variable) and rdoinfo tag (UC_BRANCH) se we could easily pass them as parameters to this script.\n\n[1] https://review.rdoproject.org/r/plugins/gitiles/config/+/refs/heads/master/playbooks/rdoinfo/upper-constraints-update/run.yaml#35",
+      "range": {
+        "startLine": 17,
+        "startChar": 89,
+        "endLine": 17,
+        "endChar": 95
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b122c56_8dbe3f5f",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "nice, i like how you are parsing the Puppetfile",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 31
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e13063ca_36fa9176",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "this should not be hardcoded, we should check for each module if it\u0027s in rdoinfo for each specific tag. The list of modules may change or we may have different puppet modules in different releases.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 29
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c9b657c_89a1ba62",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "idea for improvement, adding an option to rdopkg to output specific attributes, i.e:\n\nrdopkg info --get-attr \"tags:bobcat-uc:source-branch\" puppet-stdlib\n\nThat way we may easily replace that line by the command (i always found hacky this way of running python code in bash, although i think it\u0027s fine for this case).",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 31
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e791051_995d3dcc",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "again, we need to parametrize the tag, i.e. this would stop working after moving to caracal-uc tags or in non-master branches.",
+      "range": {
+        "startLine": 38,
+        "startChar": 122,
+        "endLine": 38,
+        "endChar": 128
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd1f6fde_00a1b508",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "Maybe we should cover the case where a project is still unpinned in rdoinfo?, i guess it\u0027d fail in this case.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 18
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32a09a5a_9d71f94e",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "idea for improvement, adding a command update_tag to releng project to replace this line by a cleaner bash command call.",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 43
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1896fdb8_a2b8a8ff",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-06T08:54:00Z",
+      "side": 1,
+      "message": "i\u0027d print a message in the \"else\" case. Something like:\n\n\"Puppetfile version $puppetfile_version is older than pinned tag $pinned_tag_uc \"",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 49,
+        "endChar": 10
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
