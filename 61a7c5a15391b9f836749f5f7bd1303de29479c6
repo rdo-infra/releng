@@ -1,0 +1,9 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 09 Oct 2023 12:11:19 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/rdo-infra/releng/+/50237
+Project: rdo-infra/releng
+Branch: refs/heads/master
