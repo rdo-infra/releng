@@ -16,6 +16,24 @@
       "message": "missing a comma after centos9-bobcat ?",
       "revId": "695921cb3c961193d41309e6cbaf0b3d68b1a474",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b250041_3ec98862",
+        "filename": "rdoutils/generate_ftbfs_dashboard_feed.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-10T11:52:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4bd7932a_295e6740",
+      "revId": "695921cb3c961193d41309e6cbaf0b3d68b1a474",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
