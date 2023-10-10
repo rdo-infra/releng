@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a02df6ed_110015f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-10-10T08:22:14Z",
+      "side": 1,
+      "message": "We should maybe rename the script to pin_non_os_puppet_modules.sh ? to make it clear that we are manipulating the non OpenStack modules",
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3bdcc6b4_7f72bbc6",
         "filename": "scripts/pin_puppet_modules.sh",
         "patchSetId": 2
