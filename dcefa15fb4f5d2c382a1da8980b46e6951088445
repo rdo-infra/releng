@@ -18,6 +18,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad7dd847_65deb48e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a02df6ed_110015f8",
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3bdcc6b4_7f72bbc6",
@@ -31,6 +49,30 @@
       "writtenOn": "2023-10-06T08:54:00Z",
       "side": 1,
       "message": "we should make this script configurable to work different releases, not only master.\n\nNote that, in the job where we will use this script [1] we have already logic to discover git branch for the release (GIT_BRANCH variable) and rdoinfo tag (UC_BRANCH) se we could easily pass them as parameters to this script.\n\n[1] https://review.rdoproject.org/r/plugins/gitiles/config/+/refs/heads/master/playbooks/rdoinfo/upper-constraints-update/run.yaml#35",
+      "range": {
+        "startLine": 17,
+        "startChar": 89,
+        "endLine": 17,
+        "endChar": 95
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6c3c1f2_742003dc",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3bdcc6b4_7f72bbc6",
       "range": {
         "startLine": 17,
         "startChar": 89,
@@ -64,6 +106,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9fddb77_e8affcfd",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b122c56_8dbe3f5f",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 31
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e13063ca_36fa9176",
@@ -77,6 +143,30 @@
       "writtenOn": "2023-10-06T08:54:00Z",
       "side": 1,
       "message": "this should not be hardcoded, we should check for each module if it\u0027s in rdoinfo for each specific tag. The list of modules may change or we may have different puppet modules in different releases.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 29
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3005a8e_010d0c9d",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e13063ca_36fa9176",
       "range": {
         "startLine": 26,
         "startChar": 0,
@@ -133,6 +223,30 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7b21d77_61b13c74",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e791051_995d3dcc",
+      "range": {
+        "startLine": 38,
+        "startChar": 122,
+        "endLine": 38,
+        "endChar": 128
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fd1f6fde_00a1b508",
@@ -146,6 +260,30 @@
       "writtenOn": "2023-10-06T08:54:00Z",
       "side": 1,
       "message": "Maybe we should cover the case where a project is still unpinned in rdoinfo?, i guess it\u0027d fail in this case.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 18
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdf6661b_523b7e43",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fd1f6fde_00a1b508",
       "range": {
         "startLine": 44,
         "startChar": 0,
@@ -192,6 +330,30 @@
       "writtenOn": "2023-10-06T08:54:00Z",
       "side": 1,
       "message": "i\u0027d print a message in the \"else\" case. Something like:\n\n\"Puppetfile version $puppetfile_version is older than pinned tag $pinned_tag_uc \"",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 49,
+        "endChar": 10
+      },
+      "revId": "dcefa15fb4f5d2c382a1da8980b46e6951088445",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fc329ef_c3daea82",
+        "filename": "scripts/pin_puppet_modules.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-10-11T12:06:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1896fdb8_a2b8a8ff",
       "range": {
         "startLine": 49,
         "startChar": 8,
