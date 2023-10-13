@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "135b4603_ce0dfcf2",
+        "filename": "scripts/pin_non_os_puppet_modules.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-13T14:43:35Z",
+      "side": 1,
+      "message": "see my note below about UC_BRANCH",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 9
+      },
+      "revId": "c7c05f152a86c07b70a877ea969be988cbc57f5e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "813bc7f6_43a060f7",
+        "filename": "scripts/pin_non_os_puppet_modules.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-13T14:43:35Z",
+      "side": 1,
+      "message": "this would fail for non-master releases where we don\u0027t use -uc. I\u0027d simply use a variable \"RDOINFO_TAG\" that would be the tag name, bobcat, antelope, caracal-uc ...",
+      "range": {
+        "startLine": 35,
+        "startChar": 132,
+        "endLine": 35,
+        "endChar": 135
+      },
+      "revId": "c7c05f152a86c07b70a877ea969be988cbc57f5e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "377432dc_396e70dc",
+        "filename": "scripts/pin_non_os_puppet_modules.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-13T14:43:35Z",
+      "side": 1,
+      "message": "IMO the behavior should be different in those cases:\n\n1. If project puppetfile_project not exist in rdoinfo: ignore\n2. If project exist but it\u0027s not pinned at all: a pin should be proposed.\n\nThat may lead to reverts but that\u0027s should be managed by the reviewed. I think that\u0027s better that having following master by mistake. \n\nIf we want to allow not to pin, we should look for something like how we use version_locked tag for non-puppet modules from u-c.",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 10
+      },
+      "revId": "c7c05f152a86c07b70a877ea969be988cbc57f5e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dddfa469_5e190e09",
+        "filename": "scripts/pin_non_os_puppet_modules.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-10-13T14:43:35Z",
+      "side": 1,
+      "message": "this is failing in my local test:\n\nFileNotFoundError: [Errno 2] No such file or directory: \u0027./rdo-full.yml\u0027\n\nI think the problem is that we move out of rdoinfo folder in line 45 so we need to go back to rdoinfo directory. I\u0027m guessing that the script should be executed from a local clone of rdoinfo repo, right?\n\nIn any case, i think the best option is to store the path of RDOINFO local clone in a variable at the beginning (from $PWD or from a script parameter) and use it in local_dir",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 43
+      },
+      "revId": "c7c05f152a86c07b70a877ea969be988cbc57f5e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
