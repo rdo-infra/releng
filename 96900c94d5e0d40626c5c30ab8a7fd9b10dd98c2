@@ -22,6 +22,30 @@
       },
       "revId": "96900c94d5e0d40626c5c30ab8a7fd9b10dd98c2",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e56bcdc_4e54a8cf",
+        "filename": "scripts/pin_non_os_puppet_modules.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-11-10T15:42:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2fab22f7_8b9d93e9",
+      "range": {
+        "startLine": 41,
+        "startChar": 136,
+        "endLine": 41,
+        "endChar": 153
+      },
+      "revId": "96900c94d5e0d40626c5c30ab8a7fd9b10dd98c2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
