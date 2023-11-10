@@ -37,8 +37,9 @@ while IFS= read -r line; do
         puppetfile_project=$(echo $line | awk '{print $1}')
         puppetfile_version=$(echo $line | awk '{print $3}')
         puppet_repo=$(echo $line | awk '{print $2}')
+        pushd "$RDOINFO_FILE" > /dev/null
         pinned_tag_uc=$(python3 -c "from rdoutils import rdoinfo; print(rdoinfo.get_pin(\"puppet-$puppetfile_project\", \"$UC_BRANCH\"))") || true
-
+        popd > /dev/null
          if [[ $pinned_tag_uc == "" ]]; then
              echo "Project $puppetfile_project not exists, ignoring."
              echo
