@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2fab22f7_8b9d93e9",
+        "filename": "scripts/pin_non_os_puppet_modules.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-11-10T15:26:34Z",
+      "side": 1,
+      "message": "I\u0027d suggest to use local_dir\u003d\\\"$RDOINFO_FILE\\\" instead.\n\nEven if it works fine, from a python style pov parameters which are declared by keyword are called by keyword usually:\n\nhttps://python-guide-es.readthedocs.io/es/latest/writing/style.html#function-arguments\n\nMain reason is that, given that the variable has a keyword someone may add a positional one later or even to change order when introducing a new keyword one. Using keyword when calling it, makes it more resilient.",
+      "range": {
+        "startLine": 41,
+        "startChar": 136,
+        "endLine": 41,
+        "endChar": 153
+      },
+      "revId": "96900c94d5e0d40626c5c30ab8a7fd9b10dd98c2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
