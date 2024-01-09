@@ -22,6 +22,30 @@
       },
       "revId": "9cb2d4f3c345bd33808ef3670b56089e643eb658",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ffaf58ee_b4b7c0ec",
+        "filename": "scripts/new_release_scripts/pin-non_os-puppet.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-01-09T13:17:57Z",
+      "side": 0,
+      "message": "The behavior is kept in the \"rdo_clone_repo\" function.\nBut, this patch is worthless now, as we\u0027re tracking the version in p-o-i for the non openstack puppet modules in rdoinfo.\nI\u0027m gonna abandon it",
+      "parentUuid": "ec73a945_88fd859a",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 19
+      },
+      "revId": "9cb2d4f3c345bd33808ef3670b56089e643eb658",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
