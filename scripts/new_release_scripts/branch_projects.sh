@@ -12,7 +12,7 @@ RSRC_REPO_NAME="config"
 RSRC_REPO_URL="https://review.rdoproject.org/r/$RSRC_REPO_NAME"
 RSRC_DIR="$WORKDIR/$RSRC_REPO_NAME"
 
-RELEASES=$(rdopkg info)
+RELEASES=$(rdopkg info -l ~/rdoinfo)
 MASTER_RELEASE=$(echo -e "$RELEASES" | grep -e "in development phase" | awk '{print $1}')
 LATEST_RELEASE=$(echo -e "$RELEASES" | grep -e "in maintained phase" | awk '{print $1}' | head -n 1)
 
