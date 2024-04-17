@@ -72,4 +72,5 @@ the virtualenv to use rpm module from the system.
 1. Add custom location for rdoinfo in rdoutils/rdoinfo.py
 2. Manage independent reviews in rdo_release_review
 3. Add some unit tests
+4. Add some unit tests
 
