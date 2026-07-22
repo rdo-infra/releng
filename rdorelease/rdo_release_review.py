@@ -85,7 +85,6 @@ def env_prep(directory, gerrit_user):
     global repodir
     repodir = datadir + '/distgits'
     create_dirs(directory)
-    global session
     global user
     user = gerrit_user
     # We need to force TERM variables to invoke rdopkg methods

@@ -13,6 +13,7 @@ PyYAML
 git-review
 pandas
 koji
+gssapi < 1.8.0
 
 # Other binary requirements
 # git
