@@ -69,7 +69,10 @@ def load_uc(projects_filter):
     uc = {}
     with open(UC, 'rb') as ucfile:
         for line in ucfile.readlines():
-            name, version_spec = line.decode('utf8').rstrip().split('===')
+            decoded = line.decode('utf8').rstrip()
+            if not decoded or decoded.startswith('#') or '===' not in decoded:
+                continue
+            name, version_spec = decoded.split('===')
             if name and projects_filter(name):
                 version = version_spec.split(';')[0]
                 if version:
